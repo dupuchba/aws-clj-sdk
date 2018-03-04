@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="386e60d7-d972-48f4-9285-bd856067adb0" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/portkey/aws.clj" afterPath="$PROJECT_DIR$/src/portkey/aws.clj" />
+      <change beforePath="$PROJECT_DIR$/src/portkey/awsgen.clj" afterPath="$PROJECT_DIR$/src/portkey/awsgen.clj" />
+      <change beforePath="$PROJECT_DIR$/src/portkey/awssig.clj" afterPath="$PROJECT_DIR$/src/portkey/awssig.clj" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="awsgen.clj" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/portkey/awsgen.clj">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="756">
+                    <caret line="289" column="40" lean-forward="true" selection-start-line="233" selection-start-column="0" selection-end-line="306" selection-end-column="76" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="aws.clj" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/portkey/aws.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1781">
+              <caret line="92" column="28" lean-forward="false" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="awsgen.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/portkey/awsgen.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4057">
+              <caret line="393" column="78" lean-forward="false" selection-start-line="393" selection-start-column="74" selection-end-line="393" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="awssig.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/portkey/awssig.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="194" column="58" lean-forward="false" selection-start-line="194" selection-start-column="58" selection-end-line="194" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api-2.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/aws-sdk-core/apis/sdb/2009-04-15/api-2.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="docs-2.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/aws-sdk-core/apis/sdb/2009-04-15/docs-2.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_2009-04-15.clj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/portkey/aws/sdb/_2009-04-15.clj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="51" lean-forward="true" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ListPlatformApplicationsResponse</find>
+      <find>authorizerId</find>
+      <find>:portkey.aws.apigateway.-2015-07-09.get-authorizer-request/authorizerId</find>
+      <find>BoxedBoolean</find>
+      <find>shape-type-spec</find>
+      <find>generate-files</find>
+      <find>get-event-source</find>
+      <find>sync-http-client</find>
+      <find>*http-client*</find>
+      <find>DomainName</find>
+      <find>CreateDomain</find>
+      <find>hmac-sha-256</find>
+      <find>String</find>
+      <find>unhal</find>
+      <find>coerce-body</find>
+      <find>AttributeNameList</find>
+      <find>gen-operation</find>
+      <find>base</find>
+      <find>ListDomainsRequest</find>
+      <find>invalid-query-expression</find>
+      <find>list</find>
+      <find>sigv-v4</find>
+      <find>sign-v4</find>
+      <find>sigv4</find>
+      <find>wrap-</find>
+      <find>caca</find>
+      <find>Attribute</find>
+      <find>url-encode</find>
+      <find>wrap-sign</find>
+      <find>http</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/resources</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="add-min-max-blob" />
+      </map>
+    </option>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/project.clj" />
+        <option value="$PROJECT_DIR$/src/portkey/awsgen.clj" />
+        <option value="$PROJECT_DIR$/src/portkey/awssig.clj" />
+        <option value="$PROJECT_DIR$/src/portkey/aws.clj" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="969" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="aws-clj-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aws-clj-sdk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aws-clj-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aws-clj-sdk" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aws-clj-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aws-clj-sdk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aws-clj-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aws-clj-sdk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="portkey" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aws-clj-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aws-clj-sdk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="portkey" type="462c0819:PsiDirectoryNode" />
+              <item name="aws" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="aws-clj-sdk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="aws-clj-sdk" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="portkey" type="462c0819:PsiDirectoryNode" />
+              <item name="aws" type="462c0819:PsiDirectoryNode" />
+              <item name="sdb" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ReplState" timestamp="1520176141177">{:repl-history {:ide [], :local [{:command &quot;(let [host \&quot;https://sdb.eu-west-1.amazonaws.com\&quot;\n        access-key \&quot;access\&quot;\n        secret-key \&quot;secret\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;POST\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         codec/url-encode\n         (assoc qp \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true} :form-params)\n         (http/post host)))&quot;, :offset 831, :ns &quot;portkey.aws&quot;} {:command &quot;(doc codec/url-encode)&quot;, :offset 21, :ns &quot;portkey.aws&quot;} {:command &quot;(codec/url-encode \&quot; =?%\&quot;)&quot;, :offset 25, :ns &quot;portkey.aws&quot;} {:command &quot;(ns portkey.aws\n  (:refer-clojure :exclude [cond])\n  (:require [clojure.string :as str]\n            [clojure.java.io :as io]\n            [clj-http.client :as http]\n            [cheshire.core :as json]\n            [clojure.spec.alpha :as spec]\n            [clojure.core.async :as async]\n            [net.cgrand.xforms :as x]\n            [portkey.awssig :as sig]\n            [ring.util.codec :as codec]))&quot;, :offset 402, :ns &quot;portkey.aws&quot;} {:command &quot;(clojure.java.javadoc/javadoc String)&quot;, :offset 36, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;https://sdb.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;POST\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         codec/url-encode\n         (assoc qp \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true} :form-params)\n         (http/post host)))&quot;, :offset 869, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;https://sdb.eu-west-1.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;POST\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         codec/url-encode\n         (assoc qp \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true} :form-params)\n         (http/post host)))&quot;, :offset 879, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;https://sdb.eu-west-1.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;POST\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         codec/url-encode\n         (assoc qp \&quot;Signature\&quot;)\n         #_(assoc {:debug true :debug-body true} :form-params)\n         #_(http/post host)))&quot;, :offset 883, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;https://sdb.eu-west-1.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}\n        qp' {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n             \&quot;AWSAccessKeyId\&quot;   (codec/url-encode access-key)\n             \&quot;DomainName\&quot;       domain-name\n             \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n             \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n             \&quot;Timestamp\&quot;        (codec/url-encode (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter))\n             \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;POST\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         codec/url-encode\n         (assoc qp' \&quot;Signature\&quot;)\n         #_(assoc {:debug true :debug-body true} :form-params)\n         #_(http/post host)))&quot;, :offset 1302, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;https://sdb.eu-west-1.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}\n        qp' {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n             \&quot;AWSAccessKeyId\&quot;   (codec/url-encode access-key)\n             \&quot;DomainName\&quot;       domain-name\n             \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n             \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n             \&quot;Timestamp\&quot;        (codec/url-encode (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter))\n             \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;POST\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         codec/url-encode\n         (assoc qp' \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true} :form-params)\n         #_(http/post host)))&quot;, :offset 1300, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;https://sdb.eu-west-1.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}\n        qp' {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n             \&quot;AWSAccessKeyId\&quot;   (codec/url-encode access-key)\n             \&quot;DomainName\&quot;       domain-name\n             \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n             \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n             \&quot;Timestamp\&quot;        (codec/url-encode (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter))\n             \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;POST\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         codec/url-encode\n         (assoc qp' \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true} :form-params)\n         (http/post host)))&quot;, :offset 1298, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;https://sdb.eu-west-1.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}\n        qp' {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n             \&quot;AWSAccessKeyId\&quot;   (codec/url-encode access-key)\n             \&quot;DomainName\&quot;       domain-name\n             \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n             \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n             \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n             \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;POST\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         codec/url-encode\n         (assoc qp' \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true} :form-params)\n         (http/post host)))&quot;, :offset 1279, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;https://sdb.eu-west-1.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}\n        qp' {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n             \&quot;AWSAccessKeyId\&quot;   access-key\n             \&quot;DomainName\&quot;       domain-name\n             \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n             \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n             \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n             \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;POST\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         codec/url-encode\n         (assoc qp' \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true} :form-params)\n         (http/post host)))&quot;, :offset 1260, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;https://sdb.eu-west-1.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}\n        qp' {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n             \&quot;AWSAccessKeyId\&quot;   access-key\n             \&quot;DomainName\&quot;       domain-name\n             \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n             \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n             \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n             \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;POST\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         codec/url-encode\n         (assoc qp' \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true :content-type \&quot;application/x-www-form-urlencoded\&quot;} :form-params)\n         (http/post host)))&quot;, :offset 1310, :ns &quot;portkey.aws&quot;} {:command &quot;(clojure.java.javadoc/javadoc java.time.ZoneId)&quot;, :offset 47, :ns &quot;portkey.aws&quot;} {:command &quot;(let [qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n          \&quot;AWSAccessKeyId\&quot;    \&quot;a\&quot;\n          \&quot;DomainName\&quot;       \&quot;b\&quot;\n          \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n          \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n          \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n          \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n  (into []\n        (comp\n          (x/sort))))&quot;, :offset 388, :ns &quot;portkey.aws&quot;} {:command &quot;(let [qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n          \&quot;AWSAccessKeyId\&quot;    \&quot;a\&quot;\n          \&quot;DomainName\&quot;       \&quot;b\&quot;\n          \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n          \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n          \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n          \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n  (-&gt;&gt;\n    (into []\n          (comp\n            (x/sort)))))&quot;, :offset 405, :ns &quot;portkey.aws&quot;} {:command &quot;(let [qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n          \&quot;AWSAccessKeyId\&quot;    \&quot;a\&quot;\n          \&quot;DomainName\&quot;       \&quot;b\&quot;\n          \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n          \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n          \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n          \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n  (-&gt;&gt;\n    (into {}\n          (comp\n            (x/sort)))))&quot;, :offset 364, :ns &quot;portkey.aws&quot;} {:command &quot;(let [qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n          \&quot;AWSAccessKeyId\&quot;    \&quot;a\&quot;\n          \&quot;DomainName\&quot;       \&quot;b\&quot;\n          \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n          \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n          \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n          \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n  (-&gt;&gt;\n    (x/str\n      (comp\n        (x/sort)\n        (x/for [[k v] %]\n               (str (codec/url-encode k) \&quot;=\&quot; (codec/url-encode v)))\n        (interpose \&quot;&amp;\&quot;)))))&quot;, :offset 510, :ns &quot;portkey.aws&quot;} {:command &quot;(let [qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n          \&quot;AWSAccessKeyId\&quot;    \&quot;a\&quot;\n          \&quot;DomainName\&quot;       \&quot;b\&quot;\n          \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n          \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n          \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n          \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n  (-&gt;&gt; qp\n    (x/str\n      (comp\n        (x/sort)\n        (x/for [[k v] %]\n               (str (codec/url-encode k) \&quot;=\&quot; (codec/url-encode v)))\n        (interpose \&quot;&amp;\&quot;)))))&quot;, :offset 355, :ns &quot;portkey.aws&quot;} {:command &quot;(let [qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n          \&quot;AWSAccessKeyId\&quot;    \&quot;a\&quot;\n          \&quot;DomainName\&quot;       \&quot;b\&quot;\n          \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n          \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n          \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n          \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n  (-&gt;&gt; qp\n    (into {}\n          (comp\n            (x/sort)))))&quot;, :offset 409, :ns &quot;portkey.aws&quot;} {:command &quot;(let [qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n          \&quot;AWSAccessKeyId\&quot;    \&quot;a\&quot;\n          \&quot;DomainName\&quot;       \&quot;b\&quot;\n          \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n          \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n          \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n          \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n  (-&gt;&gt; qp\n    (into {}\n          (comp\n            (x/sort)\n            (x/for [[k v] %]\n                   [(codec/url-encode k)\n                    (codec/url-encode b)])))))&quot;, :offset 516, :ns &quot;portkey.aws&quot;} {:command &quot;(let [qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n          \&quot;AWSAccessKeyId\&quot;    \&quot;a\&quot;\n          \&quot;DomainName\&quot;       \&quot;b\&quot;\n          \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n          \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n          \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n          \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n  (-&gt;&gt; qp\n    (into {}\n          (comp\n            (x/sort)\n            (x/for [[k v] %]\n                   [(codec/url-encode k)\n                    (codec/url-encode v)])))))&quot;, :offset 522, :ns &quot;portkey.aws&quot;} {:command &quot;(let [qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n          \&quot;AWSAccessKeyId\&quot;    \&quot;a\&quot;\n          \&quot;DomainName\&quot;       \&quot;b\&quot;\n          \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n          \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n          \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n          \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n  (-&gt;&gt; qp\n    (into {}\n          (comp\n            (x/sort)\n            (x/for [[k v] %]\n                   [(codec/url-encode k)\n                    (codec/url-encode v)])\n            (map #(interpose \&quot;=\&quot;))))))&quot;, :offset 557, :ns &quot;portkey.aws&quot;} {:command &quot;(let [qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n          \&quot;AWSAccessKeyId\&quot;    \&quot;a\&quot;\n          \&quot;DomainName\&quot;       \&quot;b\&quot;\n          \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n          \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n          \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n          \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n  (-&gt;&gt; qp\n    (into {}\n          (comp\n            (x/sort)\n            (x/for [[k v] %]\n                   [(codec/url-encode k)\n                    (codec/url-encode v)])\n            (map #(interpose \&quot;=\&quot; %))))))&quot;, :offset 559, :ns &quot;portkey.aws&quot;} {:command &quot;(ns portkey.aws\n  (:refer-clojure :exclude [cond])\n  (:require [clojure.string :as str]\n    [clojure.java.io :as io]\n    [clj-http.client :as http]\n    [cheshire.core :as json]\n    [clojure.spec.alpha :as spec]\n    [clojure.core.async :as async]\n    [net.cgrand.xforms :as x]\n    [portkey.awssig :as sig]))&quot;, :offset 306, :ns &quot;portkey.aws&quot;} {:command &quot;(doc x/sort)&quot;, :offset 11, :ns &quot;portkey.aws&quot;} {:command &quot;(source x/sort)&quot;, :offset 14, :ns &quot;portkey.aws&quot;} {:command &quot;(-&gt; \&quot;la\&quot;\n     (.getBytes \&quot;UTF8\&quot;))&quot;, :offset 30, :ns &quot;portkey.aws&quot;} {:command &quot;(-&gt;&gt; {\&quot;Action\&quot;           \&quot;NOT DONE\&quot;\n     \&quot;DomainName\&quot;       \&quot;NOT DONE\&quot;\n     \&quot;AWSAccessKeyId\&quot;   \&quot;AWS Access KEY\&quot;\n     \&quot;Signature\&quot;        \&quot;HMAC-SHA256 signature with secret key\&quot;\n     \&quot;SignatureVersion\&quot; \&quot;NOT DONE\&quot;\n     \&quot;Timestamp\&quot;        \&quot;timestamp of the request\&quot;\n     \&quot;Version\&quot;          \&quot;NOT DONE\&quot;}\n    (x/into {}\n            (x/sort)))&quot;, :offset 332, :ns &quot;portkey.aws&quot;} {:command &quot;(-&gt;&gt; {\&quot;Action\&quot;           \&quot;NOT DONE\&quot;\n     \&quot;DomainName\&quot;       \&quot;NOT DONE\&quot;\n     \&quot;AWSAccessKeyId\&quot;   \&quot;AWS Access KEY\&quot;\n     \&quot;Signature\&quot;        \&quot;HMAC-SHA256 signature with secret key\&quot;\n     \&quot;SignatureVersion\&quot; \&quot;NOT DONE\&quot;\n     \&quot;Timestamp\&quot;        \&quot;timestamp of the request\&quot;\n     \&quot;Version\&quot;          \&quot;NOT DONE\&quot;}\n    (x/into {}\n            (map #(.getBytes % \&quot;UTF8\&quot;))\n            #_(x/sort)))&quot;, :offset 377, :ns &quot;portkey.aws&quot;} {:command &quot;(-&gt;&gt; {\&quot;Action\&quot;           \&quot;NOT DONE\&quot;\n     \&quot;DomainName\&quot;       \&quot;NOT DONE\&quot;\n     \&quot;AWSAccessKeyId\&quot;   \&quot;AWS Access KEY\&quot;\n     \&quot;Signature\&quot;        \&quot;HMAC-SHA256 signature with secret key\&quot;\n     \&quot;SignatureVersion\&quot; \&quot;NOT DONE\&quot;\n     \&quot;Timestamp\&quot;        \&quot;timestamp of the request\&quot;\n     \&quot;Version\&quot;          \&quot;NOT DONE\&quot;}\n    (x/into {}\n            (x/for [[k v] %]\n                   [(.getBytes k \&quot;UTF8\&quot;) (.getBytes v \&quot;UTF8\&quot;)])\n            #_(x/sort)))&quot;, :offset 404, :ns &quot;portkey.aws&quot;} {:command &quot;(-&gt;&gt; {\&quot;Action\&quot;           \&quot;NOT DONE\&quot;\n     \&quot;DomainName\&quot;       \&quot;NOT DONE\&quot;\n     \&quot;AWSAccessKeyId\&quot;   \&quot;AWS Access KEY\&quot;\n     \&quot;Signature\&quot;        \&quot;HMAC-SHA256 signature with secret key\&quot;\n     \&quot;SignatureVersion\&quot; \&quot;NOT DONE\&quot;\n     \&quot;Timestamp\&quot;        \&quot;timestamp of the request\&quot;\n     \&quot;Version\&quot;          \&quot;NOT DONE\&quot;}\n    (x/into {}\n            (x/for [[k v] %]\n                   [(.getBytes k \&quot;UTF8\&quot;) (.getBytes v \&quot;UTF8\&quot;)])\n            (x/sort)))&quot;, :offset 426, :ns &quot;portkey.aws&quot;} {:command &quot;(doc x/sort-by)&quot;, :offset 14, :ns &quot;portkey.aws&quot;} {:command &quot;(-&gt;&gt; {\&quot;Action\&quot;           \&quot;NOT DONE\&quot;\n     \&quot;DomainName\&quot;       \&quot;NOT DONE\&quot;\n     \&quot;AWSAccessKeyId\&quot;   \&quot;AWS Access KEY\&quot;\n     \&quot;Signature\&quot;        \&quot;HMAC-SHA256 signature with secret key\&quot;\n     \&quot;SignatureVersion\&quot; \&quot;NOT DONE\&quot;\n     \&quot;Timestamp\&quot;        \&quot;timestamp of the request\&quot;\n     \&quot;Version\&quot;          \&quot;NOT DONE\&quot;}\n    (x/into {}\n            (x/for [[k v] %]\n                   [(.getBytes k \&quot;UTF8\&quot;) (.getBytes v \&quot;UTF8\&quot;)])\n            (x/sort-by first)))&quot;, :offset 437, :ns &quot;portkey.aws&quot;} {:command &quot;(-&gt;&gt; {\&quot;Action\&quot;           \&quot;NOT DONE\&quot;\n     \&quot;DomainName\&quot;       \&quot;NOT DONE\&quot;\n     \&quot;AWSAccessKeyId\&quot;   \&quot;AWS Access KEY\&quot;\n     \&quot;Signature\&quot;        \&quot;HMAC-SHA256 signature with secret key\&quot;\n     \&quot;SignatureVersion\&quot; \&quot;NOT DONE\&quot;\n     \&quot;Timestamp\&quot;        \&quot;timestamp of the request\&quot;\n     \&quot;Version\&quot;          \&quot;NOT DONE\&quot;} \n     (x/into {} \n             (x/for [[k v] %] \n                    [(.getBytes k \&quot;UTF8\&quot;) (.getBytes v \&quot;UTF8\&quot;)])\n            (x/sort-by (fn [args]\n                         (println args)))))&quot;, :offset 489, :ns &quot;portkey.aws&quot;} {:command &quot;(-&gt;&gt; {\&quot;Action\&quot;           \&quot;NOT DONE\&quot;\n     \&quot;DomainName\&quot;       \&quot;NOT DONE\&quot;\n     \&quot;AWSAccessKeyId\&quot;   \&quot;AWS Access KEY\&quot;\n     \&quot;Signature\&quot;        \&quot;HMAC-SHA256 signature with secret key\&quot;\n     \&quot;SignatureVersion\&quot; \&quot;NOT DONE\&quot;\n     \&quot;Timestamp\&quot;        \&quot;timestamp of the request\&quot;\n     \&quot;Version\&quot;          \&quot;NOT DONE\&quot;} \n     (x/into {} \n             (x/for [[k v] %] \n                    [(.getBytes k \&quot;UTF8\&quot;) (.getBytes v \&quot;UTF8\&quot;)])\n            (x/sort-by (fn [&amp; args]\n                         (println args)))))&quot;, :offset 440, :ns &quot;portkey.aws&quot;} {:command &quot;(-&gt;&gt; {\&quot;Action\&quot;           \&quot;NOT DONE\&quot;\n     \&quot;DomainName\&quot;       \&quot;NOT DONE\&quot;\n     \&quot;AWSAccessKeyId\&quot;   \&quot;AWS Access KEY\&quot;\n     \&quot;Signature\&quot;        \&quot;HMAC-SHA256 signature with secret key\&quot;\n     \&quot;SignatureVersion\&quot; \&quot;NOT DONE\&quot;\n     \&quot;Timestamp\&quot;        \&quot;timestamp of the request\&quot;\n     \&quot;Version\&quot;          \&quot;NOT DONE\&quot;} \n     (x/into [] \n             (x/for [[k v] %] \n                    [(.getBytes k \&quot;UTF8\&quot;) (.getBytes v \&quot;UTF8\&quot;)])\n             (x/sort-by (fn [&amp; args]\n                         (println args)))))&quot;, :offset 313, :ns &quot;portkey.aws&quot;} {:command &quot;(-&gt;&gt; {\&quot;Action\&quot;           \&quot;NOT DONE\&quot;\n     \&quot;DomainName\&quot;       \&quot;NOT DONE\&quot;\n     \&quot;AWSAccessKeyId\&quot;   \&quot;AWS Access KEY\&quot;\n     \&quot;Signature\&quot;        \&quot;HMAC-SHA256 signature with secret key\&quot;\n     \&quot;SignatureVersion\&quot; \&quot;NOT DONE\&quot;\n     \&quot;Timestamp\&quot;        \&quot;timestamp of the request\&quot;\n     \&quot;Version\&quot;          \&quot;NOT DONE\&quot;} \n     (x/into {}\n             (comp\n               (x/for [[k v] %]\n                      [(.getBytes k \&quot;UTF8\&quot;) (.getBytes v \&quot;UTF8\&quot;)])\n               (x/sort-by (fn [&amp; args]\n                            (println args))))))&quot;, :offset 333, :ns &quot;portkey.aws&quot;} {:command &quot;(-&gt;&gt; {\&quot;Action\&quot;           \&quot;NOT DONE\&quot;\n     \&quot;DomainName\&quot;       \&quot;NOT DONE\&quot;\n     \&quot;AWSAccessKeyId\&quot;   \&quot;AWS Access KEY\&quot;\n     \&quot;Signature\&quot;        \&quot;HMAC-SHA256 signature with secret key\&quot;\n     \&quot;SignatureVersion\&quot; \&quot;NOT DONE\&quot;\n     \&quot;Timestamp\&quot;        \&quot;timestamp of the request\&quot;\n     \&quot;Version\&quot;          \&quot;NOT DONE\&quot;} \n     (x/into {}\n             (comp\n               (x/for [[k v] %]\n                      [(.getBytes k \&quot;UTF8\&quot;) (.getBytes v \&quot;UTF8\&quot;)])\n               (x/sort-by first\n                          ))))&quot;, :offset 491, :ns &quot;portkey.aws&quot;} {:command &quot;(-&gt;&gt; {\&quot;Action\&quot;           \&quot;NOT DONE\&quot;\n     \&quot;DomainName\&quot;       \&quot;NOT DONE\&quot;\n     \&quot;AWSAccessKeyId\&quot;   \&quot;AWS Access KEY\&quot;\n     \&quot;Signature\&quot;        \&quot;HMAC-SHA256 signature with secret key\&quot;\n     \&quot;SignatureVersion\&quot; \&quot;NOT DONE\&quot;\n     \&quot;Timestamp\&quot;        \&quot;timestamp of the request\&quot;\n     \&quot;Version\&quot;          \&quot;NOT DONE\&quot;} \n     (x/into {}\n             (comp\n               (x/for [[k v] %]\n                      [(.getBytes k \&quot;UTF8\&quot;) (.getBytes v \&quot;UTF8\&quot;)])\n               (x/sort))))&quot;, :offset 455, :ns &quot;portkey.aws&quot;} {:command &quot;(-&gt;&gt; {\&quot;Action\&quot;           \&quot;NOT DONE\&quot;\n     \&quot;DomainName\&quot;       \&quot;NOT DONE\&quot;\n     \&quot;AWSAccessKeyId\&quot;   \&quot;AWS Access KEY\&quot;\n     \&quot;Signature\&quot;        \&quot;HMAC-SHA256 signature with secret key\&quot;\n     \&quot;SignatureVersion\&quot; \&quot;NOT DONE\&quot;\n     \&quot;Timestamp\&quot;        \&quot;timestamp of the request\&quot;\n     \&quot;Version\&quot;          \&quot;NOT DONE\&quot;} \n     (x/into {}\n             (comp\n               (x/for [[k v] %]\n                      [(.getBytes k \&quot;UTF8\&quot;) (.getBytes v \&quot;UTF8\&quot;)])\n               (x/sort #(.compareTo %)))))&quot;, :offset 475, :ns &quot;portkey.aws&quot;} {:command &quot;(-&gt;&gt; {\&quot;Action\&quot;           \&quot;NOT DONE\&quot;\n     \&quot;DomainName\&quot;       \&quot;NOT DONE\&quot;\n     \&quot;AWSAccessKeyId\&quot;   \&quot;AWS Access KEY\&quot;\n     \&quot;Signature\&quot;        \&quot;HMAC-SHA256 signature with secret key\&quot;\n     \&quot;SignatureVersion\&quot; \&quot;NOT DONE\&quot;\n     \&quot;Timestamp\&quot;        \&quot;timestamp of the request\&quot;\n     \&quot;Version\&quot;          \&quot;NOT DONE\&quot;} \n     (x/into {}\n             (comp\n               (x/for [[k v] %]\n                      [(.getBytes k \&quot;UTF8\&quot;) (.getBytes v \&quot;UTF8\&quot;)])\n               (x/sort (fn [ae]\n                         (println ae))))))&quot;, :offset 507, :ns &quot;portkey.aws&quot;} {:command &quot;(-&gt;&gt; {\&quot;Action\&quot;           \&quot;NOT DONE\&quot;\n     \&quot;DomainName\&quot;       \&quot;NOT DONE\&quot;\n     \&quot;AWSAccessKeyId\&quot;   \&quot;AWS Access KEY\&quot;\n     \&quot;Signature\&quot;        \&quot;HMAC-SHA256 signature with secret key\&quot;\n     \&quot;SignatureVersion\&quot; \&quot;NOT DONE\&quot;\n     \&quot;Timestamp\&quot;        \&quot;timestamp of the request\&quot;\n     \&quot;Version\&quot;          \&quot;NOT DONE\&quot;} \n     (x/into {}\n             (comp\n               (x/for [[k v] %]\n                      [(.getBytes k \&quot;UTF8\&quot;) (.getBytes v \&quot;UTF8\&quot;)])\n               (x/sort (fn [&amp; ae]\n                         (println ae))))))&quot;, :offset 466, :ns &quot;portkey.aws&quot;} {:command &quot;(-&gt;&gt; {\&quot;Action\&quot;           \&quot;NOT DONE\&quot;\n     \&quot;DomainName\&quot;       \&quot;NOT DONE\&quot;\n     \&quot;AWSAccessKeyId\&quot;   \&quot;AWS Access KEY\&quot;\n     \&quot;Signature\&quot;        \&quot;HMAC-SHA256 signature with secret key\&quot;\n     \&quot;SignatureVersion\&quot; \&quot;NOT DONE\&quot;\n     \&quot;Timestamp\&quot;        \&quot;timestamp of the request\&quot;\n     \&quot;Version\&quot;          \&quot;NOT DONE\&quot;} \n     (x/into {}\n             (comp\n               (x/for [[k v] %]\n                      [(.getBytes k \&quot;UTF8\&quot;) (.getBytes v \&quot;UTF8\&quot;)])\n               (x/sort (fn [a b]\n                         (println a)\n                         (println b))))))&quot;, :offset 538, :ns &quot;portkey.aws&quot;} {:command &quot;(-&gt;&gt; {\&quot;Action\&quot;           \&quot;NOT DONE\&quot;\n     \&quot;DomainName\&quot;       \&quot;NOT DONE\&quot;\n     \&quot;AWSAccessKeyId\&quot;   \&quot;AWS Access KEY\&quot;\n     \&quot;Signature\&quot;        \&quot;HMAC-SHA256 signature with secret key\&quot;\n     \&quot;SignatureVersion\&quot; \&quot;NOT DONE\&quot;\n     \&quot;Timestamp\&quot;        \&quot;timestamp of the request\&quot;\n     \&quot;Version\&quot;          \&quot;NOT DONE\&quot;} \n     (x/into {}\n             (comp\n               (x/for [[k v] %]\n                      [(.getBytes k \&quot;UTF8\&quot;) (.getBytes v \&quot;UTF8\&quot;)])\n               #_(x/sort (fn [a b]\n                         (println a)\n                         (println b))))))&quot;, :offset 467, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;sdb.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;POST\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         codec/url-encode\n         (assoc qp \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true :content-type \&quot;application/x-www-form-urlencoded\&quot;} :form-params)\n         (http/post (str \&quot;https://\&quot; host))))&quot;, :offset 928, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;sdb.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}\n        qp' {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n             \&quot;AWSAccessKeyId\&quot;   (codec/url-encode access-key)\n             \&quot;DomainName\&quot;       (codec/url-encode domain-name)\n             \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n             \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n             \&quot;Timestamp\&quot;        (codec/url-encode (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter))\n             \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;POST\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         codec/url-encode\n         (assoc qp' \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true :content-type \&quot;application/x-www-form-urlencoded\&quot;} :form-params)\n         (http/post (str \&quot;https://\&quot; host))))&quot;, :offset 1366, :ns &quot;portkey.aws&quot;} {:command &quot;(.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)&quot;, :offset 86, :ns &quot;portkey.aws&quot;} {:command &quot;(def x-amz-date-formatter\n  (java.time.format.DateTimeFormatter/ofPattern \&quot;yyyy-MM-dd'T'HH:mm:ss'Z'\&quot;))&quot;, :offset 102, :ns &quot;portkey.aws&quot;} {:command &quot;(codec/url-encode \&quot;.\&quot;)&quot;, :offset 22, :ns &quot;portkey.aws&quot;} {:command &quot;(codec/url-encode \&quot;-\&quot;)&quot;, :offset 20, :ns &quot;portkey.aws&quot;} {:command &quot;(codec/url-encode \&quot;:\&quot;)&quot;, :offset 22, :ns &quot;portkey.aws&quot;} {:command &quot;(.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;GMT\&quot;)) x-amz-date-formatter)&quot;, :offset 88, :ns &quot;portkey.aws&quot;} {:command &quot;(def x-amz-date-formatter\n  (java.time.format.DateTimeFormatter/ofPattern \&quot;yyyy-MM-dd'T'HH:mm:ss\&quot;))&quot;, :offset 99, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;sdb.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;GMT\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}\n        qp' {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n             \&quot;AWSAccessKeyId\&quot;   (codec/url-encode access-key)\n             \&quot;DomainName\&quot;       (codec/url-encode domain-name)\n             \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n             \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n             \&quot;Timestamp\&quot;        (codec/url-encode (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter))\n             \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;POST\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         codec/url-encode\n         (assoc qp' \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true :content-type \&quot;application/x-www-form-urlencoded\&quot;} :form-params)\n         (http/post (str \&quot;https://\&quot; host))))&quot;, :offset 1368, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;sdb.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;GMT\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}\n        qp' {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n             \&quot;AWSAccessKeyId\&quot;   (codec/url-encode access-key)\n             \&quot;DomainName\&quot;       (codec/url-encode domain-name)\n             \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n             \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n             \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n             \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;POST\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         codec/url-encode\n         (assoc qp' \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true :content-type \&quot;application/x-www-form-urlencoded\&quot;} :form-params)\n         (http/post (str \&quot;https://\&quot; host))))&quot;, :offset 1349, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;https://sdb.eu-west-1.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;GMT\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}\n        qp' {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n             \&quot;AWSAccessKeyId\&quot;   (codec/url-encode access-key)\n             \&quot;DomainName\&quot;       (codec/url-encode domain-name)\n             \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n             \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n             \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n             \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;POST\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         codec/url-encode\n         (assoc qp' \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true :content-type \&quot;application/x-www-form-urlencoded\&quot;} :form-params)\n         (http/post (str \&quot;https://\&quot; host))))&quot;, :offset 1367, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;https://sdb.eu-west-1.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;GMT\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}\n        qp' {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n             \&quot;AWSAccessKeyId\&quot;   (codec/url-encode access-key)\n             \&quot;DomainName\&quot;       (codec/url-encode domain-name)\n             \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n             \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n             \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n             \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;POST\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         codec/url-encode\n         (assoc qp' \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true :content-type \&quot;application/x-www-form-urlencoded\&quot;} :form-params)\n         (http/post host)))&quot;, :offset 1350, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;sdb.eu-west-1.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;GMT\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}\n        qp' {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n             \&quot;AWSAccessKeyId\&quot;   (codec/url-encode access-key)\n             \&quot;DomainName\&quot;       (codec/url-encode domain-name)\n             \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n             \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n             \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n             \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;POST\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         codec/url-encode\n         (assoc qp' \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true :content-type \&quot;application/x-www-form-urlencoded\&quot;} :form-params)\n         (http/post (str \&quot;https://\&quot; host))))&quot;, :offset 1359, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;sdb.eu-west-1.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;GMT\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}\n        qp' {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n             \&quot;AWSAccessKeyId\&quot;   (codec/url-encode access-key)\n             \&quot;DomainName\&quot;       (codec/url-encode domain-name)\n             \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n             \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n             \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n             \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;GET\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         codec/url-encode\n         (assoc qp' \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true :content-type \&quot;application/x-www-form-urlencoded\&quot;} :query-params)\n         (http/get (str \&quot;https://\&quot; host))))&quot;, :offset 1358, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;sdb.eu-west-1.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;GMT\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}\n        qp' {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n             \&quot;AWSAccessKeyId\&quot;   (codec/url-encode access-key)\n             \&quot;DomainName\&quot;       (codec/url-encode domain-name)\n             \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n             \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n             \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n             \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;GET\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         codec/url-encode\n         (assoc qp' \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true :content-type \&quot;application/x-www-form-urlencoded\&quot;} :query-params)\n         #_(http/get (str \&quot;https://\&quot; host))))&quot;, :offset 1360, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;sdb.eu-west-1.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;GMT\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}\n        qp' {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n             \&quot;AWSAccessKeyId\&quot;   (codec/url-encode access-key)\n             \&quot;DomainName\&quot;       (codec/url-encode domain-name)\n             \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n             \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n             \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n             \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;GET\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         codec/url-encode\n         (assoc qp' \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true } :query-params)\n         (http/get (str \&quot;https://\&quot; host))))&quot;, :offset 1309, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;sdb.eu-west-1.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;GMT\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}\n        qp' {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n             \&quot;AWSAccessKeyId\&quot;   (codec/url-encode access-key)\n             \&quot;DomainName\&quot;       (codec/url-encode domain-name)\n             \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n             \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n             \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n             \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;GET\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         #_codec/url-encode\n         (assoc qp' \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true } :query-params)\n         (http/get (str \&quot;https://\&quot; host))))&quot;, :offset 1311, :ns &quot;portkey.aws&quot;} {:command &quot;(ns portkey.aws\n  (:refer-clojure :exclude [cond])\n  (:require [clojure.string :as str]\n    [clojure.java.io :as io]\n    [clj-http.client :as http]\n    [cheshire.core :as json]\n    [clojure.spec.alpha :as spec]\n    [clojure.core.async :as async]\n            [ring.util.codec :as codec]\n    [net.cgrand.xforms :as x]\n    [portkey.awssig :as sig]))&quot;, :offset 346, :ns &quot;portkey.aws&quot;} {:command &quot;(-&gt;&gt; {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n     \&quot;AWSAccessKeyId\&quot;   \&quot;a\&quot;\n     \&quot;DomainName\&quot;       \&quot;a\&quot;\n     \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n     \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n     \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n     \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}\n    (into {}\n          (x/sort-by key utf8-natural-byte-cmp)))&quot;, :offset 4, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;sdb.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Namess1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;POST\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         (assoc qp \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true :content-type \&quot;application/x-www-form-urlencoded\&quot;} :form-params)\n         (http/post (str \&quot;https://\&quot; host))))&quot;, :offset 904, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;sdb.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;POST\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         (assoc qp \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true :content-type \&quot;application/x-www-form-urlencoded\&quot;} :form-params)\n         (http/post (str \&quot;https://\&quot; host))))&quot;, :offset 902, :ns &quot;portkey.aws&quot;} {:command &quot;(let [host \&quot;sdb.amazonaws.com\&quot;\n        access-key \&quot;AKIAI35BNDF74BDQZUMQ\&quot;\n        secret-key \&quot;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\&quot;\n        domain-name \&quot;Name1\&quot;\n        qp {\&quot;Action\&quot;           \&quot;CreateDomain\&quot;\n            \&quot;AWSAccessKeyId\&quot;   access-key\n            \&quot;DomainName\&quot;       domain-name\n            \&quot;SignatureVersion\&quot; \&quot;2\&quot;\n            \&quot;SignatureMethod\&quot;  \&quot;HmacSHA256\&quot;\n            \&quot;Timestamp\&quot;        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of \&quot;Z\&quot;)) x-amz-date-formatter-sign-2)\n            \&quot;Version\&quot;          \&quot;2009-04-15\&quot;}]\n    (-&gt;&gt; qp\n         (create-canonicalized-query-string-v2 :query-params)\n         (create-string-to-sign-v2 \&quot;POST\&quot; host \&quot;/\&quot;)\n         (create-base-64-hmac-signature secret-key)\n         (assoc qp \&quot;Signature\&quot;)\n         (assoc {:debug true :debug-body true :content-type \&quot;application/x-www-form-urlencoded\&quot;} :form-params)\n         (http/post (str \&quot;https://\&quot; host))))&quot;, :offset 909, :ns &quot;portkey.aws&quot;} {:command &quot;(-&gt; \&quot;aws-sdk-core/apis/sdb/2009-04-15/api-2.json\&quot;\n    io/resource\n    io/reader\n    \n    )&quot;, :offset 89, :ns &quot;portkey.aws&quot;} {:command &quot;(-&gt; \&quot;aws-sdk-core/apis/sdb/2009-04-15/api-2.json\&quot;\n    io/resource\n    io/reader\n    json/parse-stream)&quot;, :offset 101, :ns &quot;portkey.aws&quot;} {:command &quot;(let [api (json/parse-stream (-&gt; \&quot;aws-sdk-core/apis/sdb/2009-04-15/api-2.json\&quot; io/resource io/reader))]\n  (case (get-in api [\&quot;metadata\&quot; \&quot;protocol\&quot;])\n    \&quot;rest-json\&quot; (for [[k gen] {\&quot;shapes\&quot; (comp #(doto % eval) gen-shape-spec) ; eval to make specs available right away\n                               \&quot;operations\&quot; (fn [ns [_ op]] (gen-operation ns op (api \&quot;shapes\&quot;)))}\n                      desc (api k)]\n                  (gen (name ns-sym) desc))\n    (do\n      (binding [*out* *err*] (prn 'skipping ns-sym 'protocol (get-in api [\&quot;metadata\&quot; \&quot;protocol\&quot;])))\n      [(list 'comment 'TODO 'support (get-in api [\&quot;metadata\&quot; \&quot;protocol\&quot;]))])\n    #_\&quot;json\&quot;\n    #_\&quot;ec2\&quot;\n    #_\&quot;query\&quot;\n    #_\&quot;rest-xml\&quot;))&quot;, :offset 689, :ns &quot;portkey.awsgen&quot;} {:command &quot;(ns portkey.awsgen\n  (:require [clojure.spec.alpha :as spec]\n    [cheshire.core :as json]\n    [clojure.java.io :as io]\n    [net.cgrand.xforms :as x]\n    [clojure.string :as str]\n    [portkey.aws :as aws]\n    [clj-http.client :as http]\n    [clojure.string :as str]\n    [clojure.pprint]))&quot;, :offset 286, :ns &quot;portkey.awsgen&quot;} {:command &quot;(refer 'clojure.repl)&quot;, :offset 20, :ns &quot;portkey.awsgen&quot;} {:command &quot;(doc eval)&quot;, :offset 9, :ns &quot;portkey.awsgen&quot;} {:command &quot;(eval (read-string \&quot;(+ 1 1)\&quot;))&quot;, :offset 30, :ns &quot;portkey.awsgen&quot;} {:command &quot;(let [api (json/parse-stream (-&gt; \&quot;aws-sdk-core/apis/sdb/2009-04-15/api-2.json\&quot; io/resource io/reader))]\n  (case (get-in api [\&quot;metadata\&quot; \&quot;protocol\&quot;])\n    \&quot;rest-json\&quot; (for [[k gen] {\&quot;shapes\&quot; (comp #(doto % eval) gen-shape-spec) ; eval to make specs available right away\n                               \&quot;operations\&quot; (fn [ns [_ op]] (gen-operation ns op (api \&quot;shapes\&quot;)))}\n                      desc (api k)]\n                  (gen (name ns-sym) desc))\n    \&quot;query\&quot; (for [[k gen] {\&quot;shapes\&quot; (comp #(doto % eval) gen-shape-spec)\n                           \&quot;operations\&quot; identity}\n                  desc (api k)]\n              (println k))\n    #_\&quot;json\&quot;\n    #_\&quot;ec2\&quot;\n    #_\&quot;query\&quot;\n    #_\&quot;rest-xml\&quot;))&quot;, :offset 686, :ns &quot;portkey.awsgen&quot;} {:command &quot;(let [api (json/parse-stream (-&gt; \&quot;aws-sdk-core/apis/sdb/2009-04-15/api-2.json\&quot; io/resource io/reader))]\n  (case (get-in api [\&quot;metadata\&quot; \&quot;protocol\&quot;])\n    \&quot;rest-json\&quot; (for [[k gen] {\&quot;shapes\&quot; (comp #(doto % eval) gen-shape-spec) ; eval to make specs available right away\n                               \&quot;operations\&quot; (fn [ns [_ op]] (gen-operation ns op (api \&quot;shapes\&quot;)))}\n                      desc (api k)]\n                  #_(gen (name ns-sym) desc))\n    \&quot;query\&quot; (for [[k gen] {\&quot;shapes\&quot; (comp #(doto % eval) gen-shape-spec)\n                           \&quot;operations\&quot; identity}\n                  desc (api k)]\n              (println k))\n    #_\&quot;json\&quot;\n    #_\&quot;ec2\&quot;\n    #_\&quot;query\&quot;\n    #_\&quot;rest-xml\&quot;))&quot;, :offset 688, :ns &quot;portkey.awsgen&quot;} {:command &quot;(let [api (json/parse-stream (-&gt; \&quot;aws-sdk-core/apis/sdb/2009-04-15/api-2.json\&quot; io/resource io/reader))]\n  (case (get-in api [\&quot;metadata\&quot; \&quot;protocol\&quot;])\n    \&quot;rest-json\&quot; (for [[k gen] {\&quot;shapes\&quot; (comp #(doto % eval) gen-shape-spec) ; eval to make specs available right away\n                               \&quot;operations\&quot; (fn [ns [_ op]] (gen-operation ns op (api \&quot;shapes\&quot;)))}\n                      desc (api k)]\n                  (println \&quot;caca\&quot;)\n                  #_(gen (name ns-sym) desc))\n    \&quot;query\&quot; (for [[k gen] {\&quot;shapes\&quot; (comp #(doto % eval) gen-shape-spec)\n                           \&quot;operations\&quot; identity}\n                  desc (api k)]\n              (println \&quot;caca\&quot;))\n    #_\&quot;json\&quot;\n    #_\&quot;ec2\&quot;\n    #_\&quot;query\&quot;\n    #_\&quot;rest-xml\&quot;))&quot;, :offset 728, :ns &quot;portkey.awsgen&quot;} {:command &quot;(let [api (json/parse-stream (-&gt; \&quot;aws-sdk-core/apis/sdb/2009-04-15/api-2.json\&quot; io/resource io/reader))]\n  (case (get-in api [\&quot;metadata\&quot; \&quot;protocol\&quot;])\n    \&quot;rest-json\&quot; (for [[k gen] {\&quot;shapes\&quot; (comp #(doto % eval) gen-shape-spec) ; eval to make specs available right away\n                               \&quot;operations\&quot; (fn [ns [_ op]] (gen-operation ns op (api \&quot;shapes\&quot;)))}\n                      desc (api k)]\n                  (println \&quot;caca\&quot;)\n                  #_(gen (name ns-sym) desc))\n    \&quot;query\&quot; (for [[k gen] {\&quot;shapes\&quot; (comp #(doto % eval) gen-shape-spec)\n                           \&quot;operations\&quot; identity}\n                  desc (api k)]\n              (println k))\n    #_\&quot;json\&quot;\n    #_\&quot;ec2\&quot;\n    #_\&quot;query\&quot;\n    #_\&quot;rest-xml\&quot;))&quot;, :offset 723, :ns &quot;portkey.awsgen&quot;} {:command &quot;(let [api (json/parse-stream (-&gt; \&quot;aws-sdk-core/apis/sdb/2009-04-15/api-2.json\&quot; io/resource io/reader))]\n  (case (get-in api [\&quot;metadata\&quot; \&quot;protocol\&quot;])\n    \&quot;rest-json\&quot; (for [[k gen] {\&quot;shapes\&quot; (comp #(doto % eval) gen-shape-spec) ; eval to make specs available right away\n                               \&quot;operations\&quot; (fn [ns [_ op]] (gen-operation ns op (api \&quot;shapes\&quot;)))}\n                      desc (api k)]\n                  (println \&quot;caca\&quot;)\n                  #_(gen (name ns-sym) desc))\n    \&quot;query\&quot; (for [[k gen] {\&quot;shapes\&quot; (comp #(doto % eval) gen-shape-spec)\n                           \&quot;operations\&quot; identity}\n                  desc (api k)]\n              (println desc))\n    #_\&quot;json\&quot;\n    #_\&quot;ec2\&quot;\n    #_\&quot;query\&quot;\n    #_\&quot;rest-xml\&quot;))&quot;, :offset 726, :ns &quot;portkey.awsgen&quot;} {:command &quot;(let [api (json/parse-stream (-&gt; \&quot;aws-sdk-core/apis/sdb/2009-04-15/api-2.json\&quot; io/resource io/reader))]\n  (case (get-in api [\&quot;metadata\&quot; \&quot;protocol\&quot;])\n    \&quot;rest-json\&quot; (for [[k gen] {\&quot;shapes\&quot; (comp #(doto % eval) gen-shape-spec) ; eval to make specs available right away\n                               \&quot;operations\&quot; (fn [ns [_ op]] (gen-operation ns op (api \&quot;shapes\&quot;)))}\n                      desc (api k)]\n                  (println \&quot;caca\&quot;)\n                  #_(gen (name ns-sym) desc))\n    \&quot;query\&quot; (for [[k gen] {\&quot;shapes\&quot; (comp #(doto % eval) gen-shape-spec)\n                           \&quot;operations\&quot; identity}\n                  desc (api k)]\n              (println gen))\n    #_\&quot;json\&quot;\n    #_\&quot;ec2\&quot;\n    #_\&quot;query\&quot;\n    #_\&quot;rest-xml\&quot;))&quot;, :offset 725, :ns &quot;portkey.awsgen&quot;} {:command &quot;(let [api (json/parse-stream (-&gt; \&quot;aws-sdk-core/apis/sdb/2009-04-15/api-2.json\&quot; io/resource io/reader))]\n  (case (get-in api [\&quot;metadata\&quot; \&quot;protocol\&quot;])\n    \&quot;rest-json\&quot; (for [[k gen] {\&quot;shapes\&quot; (comp #(doto % eval) gen-shape-spec) ; eval to make specs available right away\n                               \&quot;operations\&quot; (fn [ns [_ op]] (gen-operation ns op (api \&quot;shapes\&quot;)))}\n                      desc (api k)]\n                  (println \&quot;caca\&quot;)\n                  #_(gen (name ns-sym) desc))\n    \&quot;query\&quot; (for [[k gen] {\&quot;shapes\&quot; (comp #(doto % eval) gen-shape-spec)\n                           \&quot;operations\&quot; identity}\n                  desc (api k)]\n              (gen (name (ns-name *ns*)) desc))\n    #_\&quot;json\&quot;\n    #_\&quot;ec2\&quot;\n    #_\&quot;query\&quot;\n    #_\&quot;rest-xml\&quot;))&quot;, :offset 744, :ns &quot;portkey.awsgen&quot;} {:command &quot;(let [api (json/parse-stream (-&gt; \&quot;aws-sdk-core/apis/sdb/2009-04-15/api-2.json\&quot; io/resource io/reader))]\n    (case (get-in api [\&quot;metadata\&quot; \&quot;protocol\&quot;])\n      \&quot;rest-json\&quot; (for [[k gen] {\&quot;shapes\&quot;     (comp #(doto % eval) gen-shape-spec) ; eval to make specs available right away\n                                 \&quot;operations\&quot; (fn [ns [_ op]] (gen-operation ns op (api \&quot;shapes\&quot;)))}\n                        desc (api k)]\n                    (println \&quot;caca\&quot;)\n                    #_(gen (name ns-sym) desc))\n      \&quot;query\&quot; (for [[k gen] {\&quot;shapes\&quot;     (comp #(doto % eval) gen-shape-spec)\n                             \&quot;operations\&quot; identity}\n                    desc (api k)]\n                (gen (name (ns-name *ns*)) desc))\n      #_\&quot;json\&quot;\n      #_\&quot;ec2\&quot;\n      #_\&quot;query\&quot;\n      #_\&quot;rest-xml\&quot;))&quot;, :offset 780, :ns &quot;portkey.awsgen&quot;} {:command &quot;(let [api (json/parse-stream (-&gt; \&quot;aws-sdk-core/apis/sdb/2009-04-15/api-2.json\&quot; io/resource io/reader))]\n    (case (get-in api [\&quot;metadata\&quot; \&quot;protocol\&quot;])\n      \&quot;rest-json\&quot; (for [[k gen] {\&quot;shapes\&quot;     (comp #(doto % eval) gen-shape-spec) ; eval to make specs available right away\n                                 \&quot;operations\&quot; (fn [ns [_ op]] (gen-operation ns op (api \&quot;shapes\&quot;)))}\n                        desc (api k)]\n                    (println \&quot;caca\&quot;)\n                    #_(gen (name ns-sym) desc))\n      \&quot;query\&quot; (for [[k gen] {\&quot;shapes\&quot;     (comp #(doto % eval) gen-shape-spec)\n                             \&quot;operations\&quot; caca}\n                    desc (api k)]\n                (gen (name (ns-name *ns*)) desc))\n      #_\&quot;json\&quot;\n      #_\&quot;ec2\&quot;\n      #_\&quot;query\&quot;\n      #_\&quot;rest-xml\&quot;))&quot;, :offset 776, :ns &quot;portkey.awsgen&quot;} {:command &quot;(defn caca [ns {:as                                      operation\n                :strs                                    [name errors]\n                {input-shape \&quot;shape\&quot;}                    \&quot;input\&quot;\n                {output-shape \&quot;shape\&quot;}                   \&quot;output\&quot;\n                {:strs [method requestUri responseCode]} \&quot;http\&quot;}\n            shapes]\n  (let [error-specs (into {}\n                          (map (fn [{:strs [shape] {:strs [httpStatusCode]} \&quot;error\&quot;}]\n                                 [shape (keyword ns (aws/dashed shape))]))\n                          errors)\n        varname (symbol (aws/dashed name))\n        input-spec (some-&gt;&gt; input-shape aws/dashed (keyword ns))\n        output-spec (some-&gt;&gt; output-shape aws/dashed (keyword ns))\n        input (or (some-&gt; input-shape aws/dashed symbol) '_)\n        default-arg (if input-spec (some #(when (spec/valid? input-spec %) %) [[] {}]) {})]\n    #_(println error-specs)))&quot;, :offset 935, :ns &quot;portkey.awsgen&quot;} {:command &quot;(defn caca [ns {:as                                      operation\n                :strs                                    [name errors]\n                {input-shape \&quot;shape\&quot;}                    \&quot;input\&quot;\n                {output-shape \&quot;shape\&quot;}                   \&quot;output\&quot;\n                {:strs [method requestUri responseCode]} \&quot;http\&quot;}\n            shapes]\n  (let [error-specs (into {}\n                          (map (fn [{:strs [shape] {:strs [httpStatusCode]} \&quot;error\&quot;}]\n                                 [shape (keyword ns (aws/dashed shape))]))\n                          errors)\n        varname (symbol (aws/dashed name))\n        input-spec (some-&gt;&gt; input-shape aws/dashed (keyword ns))\n        output-spec (some-&gt;&gt; output-shape aws/dashed (keyword ns))\n        input (or (some-&gt; input-shape aws/dashed symbol) '_)\n        default-arg (if input-spec (some #(when (spec/valid? input-spec %) %) [[] {}]) {})]\n    error-specs))&quot;, :offset 923, :ns &quot;portkey.awsgen&quot;} {:command &quot;(defn caca [ns {:as                                      operation\n                :strs                                    [name errors]\n                {input-shape \&quot;shape\&quot;}                    \&quot;input\&quot;\n                {output-shape \&quot;shape\&quot;}                   \&quot;output\&quot;\n                {:strs [method requestUri responseCode]} \&quot;http\&quot;}\n            shapes]\n  (let [error-specs (into {}\n                          (map (fn [{:strs [shape] {:strs [httpStatusCode]} \&quot;error\&quot;}]\n                                 [shape (keyword ns (aws/dashed shape))]))\n                          errors)\n        varname (symbol (aws/dashed name))\n        input-spec (some-&gt;&gt; input-shape aws/dashed (keyword ns))\n        output-spec (some-&gt;&gt; output-shape aws/dashed (keyword ns))\n        input (or (some-&gt; input-shape aws/dashed symbol) '_)\n        default-arg (if input-spec (some #(when (spec/valid? input-spec %) %) [[] {}]) {})]\n    varname))&quot;, :offset 919, :ns &quot;portkey.awsgen&quot;} {:command &quot;p&quot;, :offset 1, :ns &quot;portkey.awsgen&quot;} {:command &quot;(let [api (json/parse-stream (-&gt; \&quot;aws-sdk-core/apis/sdb/2009-04-15/api-2.json\&quot; io/resource io/reader))]\n    (case (get-in api [\&quot;metadata\&quot; \&quot;protocol\&quot;])\n      \&quot;rest-json\&quot; (for [[k gen] {\&quot;shapes\&quot;     (comp #(doto % eval) gen-shape-spec) ; eval to make specs available right away\n                                 \&quot;operations\&quot; (fn [ns [_ op]] (gen-operation ns op (api \&quot;shapes\&quot;)))}\n                        desc (api k)]\n                    (println \&quot;caca\&quot;)\n                    #_(gen (name ns-sym) desc))\n      \&quot;query\&quot; (for [[k gen] {\&quot;shapes\&quot;     (comp #(doto % eval) gen-shape-spec)\n                             \&quot;operations\&quot; (fn [ns [_ op]] (caca ns op (api \&quot;shapes\&quot;)))}\n                    desc (api k)]\n                (gen (name (ns-name *ns*)) desc))\n      #_\&quot;json\&quot;\n      #_\&quot;ec2\&quot;\n      #_\&quot;query\&quot;\n      #_\&quot;rest-xml\&quot;))&quot;, :offset 816, :ns &quot;portkey.awsgen&quot;} {:command &quot;((do\n   (clojure.spec.alpha/def\n     :portkey.awsgen.invalid-query-expression/box-usage\n     (clojure.spec.alpha/and :portkey.awsgen/float))\n   (clojure.spec.alpha/def\n     :portkey.awsgen/invalid-query-expression\n     (portkey.aws/json-keys :req-un [] :opt-un [:portkey.awsgen.invalid-query-expression/BoxUsage] :locations {})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.delete-attributes-request/domain-name\n      (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.delete-attributes-request/item-name\n      (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.delete-attributes-request/attributes\n      (clojure.spec.alpha/and :portkey.awsgen/attribute-list))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.delete-attributes-request/expected\n      (clojure.spec.alpha/and :portkey.awsgen/update-condition))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/delete-attributes-request\n      (portkey.aws/json-keys\n        :req-un\n        [:portkey.awsgen.delete-attributes-request/DomainName :portkey.awsgen.delete-attributes-request/ItemName]\n        :opt-un\n        [:portkey.awsgen.delete-attributes-request/Attributes :portkey.awsgen.delete-attributes-request/Expected]\n        :locations\n        {})))\n  (clojure.spec.alpha/def\n    :portkey.awsgen/attribute-list\n    (clojure.spec.alpha/and\n      (clojure.spec.alpha/coll-of :portkey.awsgen/attribute)\n      (clojure.spec.alpha/conformer\n        clojure.core/identity\n        (fn*\n          [p1__38760__38761__auto__]\n          (if (clojure.core/sequential? p1__38760__38761__auto__) p1__38760__38761__auto__ [p1__38760__38761__auto__])))))\n  (do\n    (clojure.spec.alpha/def :portkey.awsgen.duplicate-item-name/box-usage (clojure.spec.alpha/and :portkey.awsgen/float))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/duplicate-item-name\n      (portkey.aws/json-keys :req-un [] :opt-un [:portkey.awsgen.duplicate-item-name/BoxUsage] :locations {})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.invalid-number-predicates/box-usage\n      (clojure.spec.alpha/and :portkey.awsgen/float))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/invalid-number-predicates\n      (portkey.aws/json-keys :req-un [] :opt-un [:portkey.awsgen.invalid-number-predicates/BoxUsage] :locations {})))\n  (clojure.spec.alpha/def\n    :portkey.awsgen/deletable-item-list\n    (clojure.spec.alpha/and\n      (clojure.spec.alpha/coll-of :portkey.awsgen/deletable-item)\n      (clojure.spec.alpha/conformer\n        clojure.core/identity\n        (fn*\n          [p1__38760__38761__auto__]\n          (if (clojure.core/sequential? p1__38760__38761__auto__) p1__38760__38761__auto__ [p1__38760__38761__auto__])))))\n  (do\n    (clojure.spec.alpha/def :portkey.awsgen.deletable-item/name (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.deletable-item/attributes\n      (clojure.spec.alpha/and :portkey.awsgen/attribute-list))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/deletable-item\n      (portkey.aws/json-keys\n        :req-un\n        [:portkey.awsgen.deletable-item/Name]\n        :opt-un\n        [:portkey.awsgen.deletable-item/Attributes]\n        :locations\n        {\&quot;ItemName\&quot; \&quot;Name\&quot;})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.number-submitted-attributes-exceeded/box-usage\n      (clojure.spec.alpha/and :portkey.awsgen/float))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/number-submitted-attributes-exceeded\n      (portkey.aws/json-keys\n        :req-un\n        []\n        :opt-un\n        [:portkey.awsgen.number-submitted-attributes-exceeded/BoxUsage]\n        :locations\n        {})))\n  (do\n    (clojure.spec.alpha/def :portkey.awsgen.select-result/items (clojure.spec.alpha/and :portkey.awsgen/item-list))\n    (clojure.spec.alpha/def :portkey.awsgen.select-result/next-token (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/select-result\n      (portkey.aws/json-keys\n        :req-un\n        []\n        :opt-un\n        [:portkey.awsgen.select-result/Items :portkey.awsgen.select-result/NextToken]\n        :locations\n        {})))\n  (do\n    (clojure.spec.alpha/def :portkey.awsgen.replaceable-item/name (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.replaceable-item/attributes\n      (clojure.spec.alpha/and :portkey.awsgen/replaceable-attribute-list))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/replaceable-item\n      (portkey.aws/json-keys\n        :req-un\n        [:portkey.awsgen.replaceable-item/Name :portkey.awsgen.replaceable-item/Attributes]\n        :opt-un\n        []\n        :locations\n        {\&quot;ItemName\&quot; \&quot;Name\&quot;})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.domain-metadata-request/domain-name\n      (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/domain-metadata-request\n      (portkey.aws/json-keys :req-un [:portkey.awsgen.domain-metadata-request/DomainName] :opt-un [] :locations {})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.invalid-parameter-value/box-usage\n      (clojure.spec.alpha/and :portkey.awsgen/float))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/invalid-parameter-value\n      (portkey.aws/json-keys :req-un [] :opt-un [:portkey.awsgen.invalid-parameter-value/BoxUsage] :locations {})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.batch-put-attributes-request/domain-name\n      (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.batch-put-attributes-request/items\n      (clojure.spec.alpha/and :portkey.awsgen/replaceable-item-list))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/batch-put-attributes-request\n      (portkey.aws/json-keys\n        :req-un\n        [:portkey.awsgen.batch-put-attributes-request/DomainName :portkey.awsgen.batch-put-attributes-request/Items]\n        :opt-un\n        []\n        :locations\n        {})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.put-attributes-request/domain-name\n      (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.put-attributes-request/item-name\n      (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.put-attributes-request/attributes\n      (clojure.spec.alpha/and :portkey.awsgen/replaceable-attribute-list))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.put-attributes-request/expected\n      (clojure.spec.alpha/and :portkey.awsgen/update-condition))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/put-attributes-request\n      (portkey.aws/json-keys\n        :req-un\n        [:portkey.awsgen.put-attributes-request/DomainName\n         :portkey.awsgen.put-attributes-request/ItemName\n         :portkey.awsgen.put-attributes-request/Attributes]\n        :opt-un\n        [:portkey.awsgen.put-attributes-request/Expected]\n        :locations\n        {})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.create-domain-request/domain-name\n      (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/create-domain-request\n      (portkey.aws/json-keys :req-un [:portkey.awsgen.create-domain-request/DomainName] :opt-un [] :locations {})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.number-domain-bytes-exceeded/box-usage\n      (clojure.spec.alpha/and :portkey.awsgen/float))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/number-domain-bytes-exceeded\n      (portkey.aws/json-keys :req-un [] :opt-un [:portkey.awsgen.number-domain-bytes-exceeded/BoxUsage] :locations {})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.number-domain-attributes-exceeded/box-usage\n      (clojure.spec.alpha/and :portkey.awsgen/float))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/number-domain-attributes-exceeded\n      (portkey.aws/json-keys :req-un [] :opt-un [:portkey.awsgen.number-domain-attributes-exceeded/BoxUsage] :locations {})))\n  (clojure.spec.alpha/def\n    :portkey.awsgen/item-list\n    (clojure.spec.alpha/and\n      (clojure.spec.alpha/coll-of :portkey.awsgen/item)\n      (clojure.spec.alpha/conformer\n        clojure.core/identity\n        (fn*\n          [p1__38760__38761__auto__]\n          (if (clojure.core/sequential? p1__38760__38761__auto__) p1__38760__38761__auto__ [p1__38760__38761__auto__])))))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.batch-delete-attributes-request/domain-name\n      (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.batch-delete-attributes-request/items\n      (clojure.spec.alpha/and :portkey.awsgen/deletable-item-list))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/batch-delete-attributes-request\n      (portkey.aws/json-keys\n        :req-un\n        [:portkey.awsgen.batch-delete-attributes-request/DomainName :portkey.awsgen.batch-delete-attributes-request/Items]\n        :opt-un\n        []\n        :locations\n        {})))\n  (do\n    (clojure.spec.alpha/def :portkey.awsgen.attribute/name (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.attribute/alternate-name-encoding\n      (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def :portkey.awsgen.attribute/value (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.attribute/alternate-value-encoding\n      (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/attribute\n      (portkey.aws/json-keys\n        :req-un\n        [:portkey.awsgen.attribute/Name :portkey.awsgen.attribute/Value]\n        :opt-un\n        [:portkey.awsgen.attribute/AlternateNameEncoding :portkey.awsgen.attribute/AlternateValueEncoding]\n        :locations\n        {})))\n  (clojure.spec.alpha/def\n    :portkey.awsgen/replaceable-attribute-list\n    (clojure.spec.alpha/and\n      (clojure.spec.alpha/coll-of :portkey.awsgen/replaceable-attribute)\n      (clojure.spec.alpha/conformer\n        clojure.core/identity\n        (fn*\n          [p1__38760__38761__auto__]\n          (if (clojure.core/sequential? p1__38760__38761__auto__) p1__38760__38761__auto__ [p1__38760__38761__auto__])))))\n  (clojure.spec.alpha/def\n    :portkey.awsgen/domain-name-list\n    (clojure.spec.alpha/and\n      (clojure.spec.alpha/coll-of :portkey.awsgen/string)\n      (clojure.spec.alpha/conformer\n        clojure.core/identity\n        (fn*\n          [p1__38760__38761__auto__]\n          (if (clojure.core/sequential? p1__38760__38761__auto__) p1__38760__38761__auto__ [p1__38760__38761__auto__])))))\n  (do\n    (clojure.spec.alpha/def :portkey.awsgen.update-condition/name (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def :portkey.awsgen.update-condition/value (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def :portkey.awsgen.update-condition/exists (clojure.spec.alpha/and :portkey.awsgen/boolean))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/update-condition\n      (portkey.aws/json-keys\n        :req-un\n        []\n        :opt-un\n        [:portkey.awsgen.update-condition/Name\n         :portkey.awsgen.update-condition/Value\n         :portkey.awsgen.update-condition/Exists]\n        :locations\n        {})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.delete-domain-request/domain-name\n      (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/delete-domain-request\n      (portkey.aws/json-keys :req-un [:portkey.awsgen.delete-domain-request/DomainName] :opt-un [] :locations {})))\n  (do\n    (clojure.spec.alpha/def :portkey.awsgen.no-such-domain/box-usage (clojure.spec.alpha/and :portkey.awsgen/float))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/no-such-domain\n      (portkey.aws/json-keys :req-un [] :opt-un [:portkey.awsgen.no-such-domain/BoxUsage] :locations {})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.list-domains-request/max-number-of-domains\n      (clojure.spec.alpha/and :portkey.awsgen/integer))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.list-domains-request/next-token\n      (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/list-domains-request\n      (portkey.aws/json-keys\n        :req-un\n        []\n        :opt-un\n        [:portkey.awsgen.list-domains-request/MaxNumberOfDomains :portkey.awsgen.list-domains-request/NextToken]\n        :locations\n        {})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.number-domains-exceeded/box-usage\n      (clojure.spec.alpha/and :portkey.awsgen/float))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/number-domains-exceeded\n      (portkey.aws/json-keys :req-un [] :opt-un [:portkey.awsgen.number-domains-exceeded/BoxUsage] :locations {})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.list-domains-result/domain-names\n      (clojure.spec.alpha/and :portkey.awsgen/domain-name-list))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.list-domains-result/next-token\n      (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/list-domains-result\n      (portkey.aws/json-keys\n        :req-un\n        []\n        :opt-un\n        [:portkey.awsgen.list-domains-result/DomainNames :portkey.awsgen.list-domains-result/NextToken]\n        :locations\n        {})))\n  (clojure.spec.alpha/def\n    :portkey.awsgen/attribute-name-list\n    (clojure.spec.alpha/and\n      (clojure.spec.alpha/coll-of :portkey.awsgen/string)\n      (clojure.spec.alpha/conformer\n        clojure.core/identity\n        (fn*\n          [p1__38760__38761__auto__]\n          (if (clojure.core/sequential? p1__38760__38761__auto__) p1__38760__38761__auto__ [p1__38760__38761__auto__])))))\n  (clojure.spec.alpha/def :portkey.awsgen/integer (clojure.spec.alpha/and clojure.core/int?))\n  (clojure.spec.alpha/def :portkey.awsgen/string (clojure.spec.alpha/and clojure.core/string?))\n  (do\n    (clojure.spec.alpha/def :portkey.awsgen.replaceable-attribute/name (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def :portkey.awsgen.replaceable-attribute/value (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.replaceable-attribute/replace\n      (clojure.spec.alpha/and :portkey.awsgen/boolean))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/replaceable-attribute\n      (portkey.aws/json-keys\n        :req-un\n        [:portkey.awsgen.replaceable-attribute/Name :portkey.awsgen.replaceable-attribute/Value]\n        :opt-un\n        [:portkey.awsgen.replaceable-attribute/Replace]\n        :locations\n        {})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.get-attributes-request/domain-name\n      (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.get-attributes-request/item-name\n      (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.get-attributes-request/attribute-names\n      (clojure.spec.alpha/and :portkey.awsgen/attribute-name-list))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.get-attributes-request/consistent-read\n      (clojure.spec.alpha/and :portkey.awsgen/boolean))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/get-attributes-request\n      (portkey.aws/json-keys\n        :req-un\n        [:portkey.awsgen.get-attributes-request/DomainName :portkey.awsgen.get-attributes-request/ItemName]\n        :opt-un\n        [:portkey.awsgen.get-attributes-request/AttributeNames :portkey.awsgen.get-attributes-request/ConsistentRead]\n        :locations\n        {})))\n  (clojure.spec.alpha/def :portkey.awsgen/long clojure.core/int?)\n  (clojure.spec.alpha/def\n    :portkey.awsgen/replaceable-item-list\n    (clojure.spec.alpha/and\n      (clojure.spec.alpha/coll-of :portkey.awsgen/replaceable-item)\n      (clojure.spec.alpha/conformer\n        clojure.core/identity\n        (fn*\n          [p1__38760__38761__auto__]\n          (if (clojure.core/sequential? p1__38760__38761__auto__) p1__38760__38761__auto__ [p1__38760__38761__auto__])))))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.select-request/select-expression\n      (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def :portkey.awsgen.select-request/next-token (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.select-request/consistent-read\n      (clojure.spec.alpha/and :portkey.awsgen/boolean))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/select-request\n      (portkey.aws/json-keys\n        :req-un\n        [:portkey.awsgen.select-request/SelectExpression]\n        :opt-un\n        [:portkey.awsgen.select-request/NextToken :portkey.awsgen.select-request/ConsistentRead]\n        :locations\n        {})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.attribute-does-not-exist/box-usage\n      (clojure.spec.alpha/and :portkey.awsgen/float))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/attribute-does-not-exist\n      (portkey.aws/json-keys :req-un [] :opt-un [:portkey.awsgen.attribute-does-not-exist/BoxUsage] :locations {})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.number-submitted-items-exceeded/box-usage\n      (clojure.spec.alpha/and :portkey.awsgen/float))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/number-submitted-items-exceeded\n      (portkey.aws/json-keys :req-un [] :opt-un [:portkey.awsgen.number-submitted-items-exceeded/BoxUsage] :locations {})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.invalid-number-value-tests/box-usage\n      (clojure.spec.alpha/and :portkey.awsgen/float))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/invalid-number-value-tests\n      (portkey.aws/json-keys :req-un [] :opt-un [:portkey.awsgen.invalid-number-value-tests/BoxUsage] :locations {})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.number-item-attributes-exceeded/box-usage\n      (clojure.spec.alpha/and :portkey.awsgen/float))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/number-item-attributes-exceeded\n      (portkey.aws/json-keys :req-un [] :opt-un [:portkey.awsgen.number-item-attributes-exceeded/BoxUsage] :locations {})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.domain-metadata-result/item-count\n      (clojure.spec.alpha/and :portkey.awsgen/integer))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.domain-metadata-result/item-names-size-bytes\n      (clojure.spec.alpha/and :portkey.awsgen/long))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.domain-metadata-result/attribute-name-count\n      (clojure.spec.alpha/and :portkey.awsgen/integer))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.domain-metadata-result/attribute-names-size-bytes\n      (clojure.spec.alpha/and :portkey.awsgen/long))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.domain-metadata-result/attribute-value-count\n      (clojure.spec.alpha/and :portkey.awsgen/integer))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.domain-metadata-result/attribute-values-size-bytes\n      (clojure.spec.alpha/and :portkey.awsgen/long))\n    (clojure.spec.alpha/def\n      :portkey.awsgen.domain-metadata-result/timestamp\n      (clojure.spec.alpha/and :portkey.awsgen/integer))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/domain-metadata-result\n      (portkey.aws/json-keys\n        :req-un\n        []\n        :opt-un\n        [:portkey.awsgen.domain-metadata-result/ItemCount\n         :portkey.awsgen.domain-metadata-result/ItemNamesSizeBytes\n         :portkey.awsgen.domain-metadata-result/AttributeNameCount\n         :portkey.awsgen.domain-metadata-result/AttributeNamesSizeBytes\n         :portkey.awsgen.domain-metadata-result/AttributeValueCount\n         :portkey.awsgen.domain-metadata-result/AttributeValuesSizeBytes\n         :portkey.awsgen.domain-metadata-result/Timestamp]\n        :locations\n        {})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.get-attributes-result/attributes\n      (clojure.spec.alpha/and :portkey.awsgen/attribute-list))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/get-attributes-result\n      (portkey.aws/json-keys :req-un [] :opt-un [:portkey.awsgen.get-attributes-result/Attributes] :locations {})))\n  (do\n    (clojure.spec.alpha/def\n      :portkey.awsgen.too-many-requested-attributes/box-usage\n      (clojure.spec.alpha/and :portkey.awsgen/float))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/too-many-requested-attributes\n      (portkey.aws/json-keys :req-un [] :opt-un [:portkey.awsgen.too-many-requested-attributes/BoxUsage] :locations {})))\n  (do\n    (clojure.spec.alpha/def :portkey.awsgen.request-timeout/box-usage (clojure.spec.alpha/and :portkey.awsgen/float))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/request-timeout\n      (portkey.aws/json-keys :req-un [] :opt-un [:portkey.awsgen.request-timeout/BoxUsage] :locations {})))\n  (do\n    (clojure.spec.alpha/def :portkey.awsgen.item/name (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def :portkey.awsgen.item/alternate-name-encoding (clojure.spec.alpha/and :portkey.awsgen/string))\n    (clojure.spec.alpha/def :portkey.awsgen.item/attributes (clojure.spec.alpha/and :portkey.awsgen/attribute-list))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/item\n      (portkey.aws/json-keys\n        :req-un\n        [:portkey.awsgen.item/Name :portkey.awsgen.item/Attributes]\n        :opt-un\n        [:portkey.awsgen.item/AlternateNameEncoding]\n        :locations\n        {})))\n  (clojure.spec.alpha/def :portkey.awsgen/float clojure.core/double?)\n  (do\n    (clojure.spec.alpha/def :portkey.awsgen.missing-parameter/box-usage (clojure.spec.alpha/and :portkey.awsgen/float))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/missing-parameter\n      (portkey.aws/json-keys :req-un [] :opt-un [:portkey.awsgen.missing-parameter/BoxUsage] :locations {})))\n  (do\n    (clojure.spec.alpha/def :portkey.awsgen.invalid-next-token/box-usage (clojure.spec.alpha/and :portkey.awsgen/float))\n    (clojure.spec.alpha/def\n      :portkey.awsgen/invalid-next-token\n      (portkey.aws/json-keys :req-un [] :opt-un [:portkey.awsgen.invalid-next-token/BoxUsage] :locations {})))\n  (clojure.spec.alpha/def :portkey.awsgen/boolean clojure.core/boolean?)\n  \n\n\n\n\n\n  (do\n    (clojure.core/defn\n      create-domain\n      ([create-domain-request]\n       (portkey.aws/-query-call\n         portkey.awsgen/endpoints\n         \&quot;POST\&quot;\n         \&quot;/\&quot;\n         create-domain-request\n         :portkey.awsgen/create-domain-request\n         {:payload nil, :move {}, :headers {}, :uri {}, :querystring {}}\n         nil\n         nil\n         {\&quot;InvalidParameterValue\&quot; :portkey.awsgen/invalid-parameter-value,\n          \&quot;MissingParameter\&quot; :portkey.awsgen/missing-parameter,\n          \&quot;NumberDomainsExceeded\&quot; :portkey.awsgen/number-domains-exceeded})))\n    (clojure.spec.alpha/fdef\n      create-domain\n      :args\n      (clojure.spec.alpha/tuple :portkey.awsgen/create-domain-request)\n      :ret\n      clojure.core/true?))\n\n\n  )&quot;, :offset 23136, :ns &quot;portkey.awsgen&quot;} {:command &quot;(clojure.spec.alpha/fdef\n  create-domain\n  :args\n  (clojure.spec.alpha/tuple :portkey.awsgen/create-domain-request)\n  :ret\n  clojure.core/true?)&quot;, :offset 144, :ns &quot;portkey.awsgen&quot;} {:command &quot;(guess-credentials!)&quot;, :offset 20, :ns &quot;portkey.aws&quot;} {:command &quot;(create-domain {:domain \&quot;caca\&quot;})&quot;, :offset 32, :ns &quot;portkey.awsgen&quot;} {:command &quot;(defn -query-call [endpoints method uri input input-spec\n                       {headers-params :headers uri-params :uri querystring-params :querystring payload :payload move :move}\n                       ok-code output-spec error-specs]\n  (let [{:keys [endpoint credential-scope signature-version]} (endpoints (region))]\n    (-&gt;\n      {:method method\n       ::credential-scope credential-scope\n       ::signature-version signature-version\n       :url (str endpoint uri)\n       :headers {\&quot;content-type\&quot; \&quot;application/x-www-form-urlencoded\&quot;}\n       :as :json-string-keys\n       :body (some-&gt; input-spec (conform-or-throw input))}\n      (*http-client*\n        (fn [{:as response {content-type \&quot;Content-Type\&quot;} :headers}]\n          (if (if ok-code (= ok-code (:status response)) (&lt;= 200 (:status response) 299))\n            [:result (if output-spec\n                       (spec/unform output-spec (coerce-body content-type (:body response)))\n                       true)]\n            (if-some [[type spec] (find error-specs (get-in response [:headers \&quot;x-amzn-ErrorType\&quot;]))]\n              [:exception (let [m (spec/unform spec (json/parse-string (coerce-body content-type (:body response))))]\n                            (ex-info (str type \&quot;: \&quot; (:message m)) m))]\n              (case (:status response)\n                404 [:result nil]\n                [:exception (ex-info \&quot;Unexpected response\&quot; {:response response})]))))))))&quot;, :offset 1420, :ns &quot;portkey.aws&quot;} {:command &quot;*e&quot;, :offset 2, :ns &quot;portkey.awsgen&quot;} {:command &quot;(clojure.core/defn\n  create-domain\n  ([create-domain-request]\n   (portkey.aws/-query-call\n     portkey.awsgen/endpoints\n     \&quot;POST\&quot;\n     \&quot;/\&quot;\n     create-domain-request\n     :portkey.awsgen/create-domain-request\n     {:payload nil, :move {}, :headers {}, :uri {}, :querystring {}}\n     nil\n     nil\n     {\&quot;InvalidParameterValue\&quot; :portkey.awsgen/invalid-parameter-value,\n      \&quot;MissingParameter\&quot; :portkey.awsgen/missing-parameter,\n      \&quot;NumberDomainsExceeded\&quot; :portkey.awsgen/number-domains-exceeded})))&quot;, :offset 502, :ns &quot;portkey.awsgen&quot;} {:command &quot;(defn sigv2 [{:keys [request-method uri headers body query-string] :as req}\n             {:keys [secret-key access-key region service token payload]}]\n  (println request-method)\n  (println body)\n  (println query-string)\n  (-&gt;&gt; (if (= \&quot;POST\&quot; request-method) body query-string)\n       (create-canonicalized-query-string-v2 :query-params)\n       #_(create-string-to-sign-v2 request-method)))&quot;, :offset 388, :ns &quot;portkey.awssig&quot;} {:command &quot;(x/str\n  (comp (x/sort-by key utf8-natural-byte-cmp)\n        (x/for [[k v] %]\n               (str (clj-http.util/url-encode k) \&quot;=\&quot; (clj-http.util/url-encode v)))\n        (interpose \&quot;&amp;\&quot;))\n  {\&quot;d\&quot; \&quot;a\&quot;})&quot;, :offset 196, :ns &quot;portkey.awssig&quot;} {:command &quot;(defn sigv2 [{:keys [request-method uri headers body query-string] :as req}\n             {:keys [secret-key access-key region service token payload]}]\n  (println request-method)\n  (println body)\n  (println (type body))\n  (println query-string)\n  (-&gt;&gt; (if (= \&quot;POST\&quot; request-method) body query-string)\n       (create-canonicalized-query-string-v2 :query-params)\n       println\n       #_(create-string-to-sign-v2 request-method)))&quot;, :offset 427, :ns &quot;portkey.awssig&quot;} {:command &quot;(create-domain {:domain-name \&quot;caca\&quot;})&quot;, :offset 37, :ns &quot;portkey.awsgen&quot;}], :remote []}}</component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration name="REPL" type="ClojureREPL" factoryName="Local">
+      <setting name="replType" value="1" />
+      <module name="aws-clj-sdk" />
+      <setting name="jvmArgs" value="" />
+      <setting name="parameters" value="" />
+      <setting name="workingDir" value="$PROJECT_DIR$" />
+      <setting name="profiles" value="" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="386e60d7-d972-48f4-9285-bd856067adb0" name="Default" comment="" />
+      <created>1519161411743</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1519161411743</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Used double-in spec as it has been perfect for this use case ;-)">
+      <created>1519399537339</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1519399537339</updated>
+    </task>
+    <task id="LOCAL-00002" summary="WIP : Signing v2 for Query protocol on SimpleDB service">
+      <created>1519912153469</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1519912153469</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="969" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.502442" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="REPL" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.493895" sideWeight="0.5045767" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Leiningen" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32951945" sideWeight="0.497558" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15689866" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24969475" sideWeight="0.49542335" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951945" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Used double-in spec as it has been perfect for this use case ;-)" />
+    <MESSAGE value="WIP : Signing v2 for Query protocol on SimpleDB service" />
+    <option name="LAST_COMMIT_MESSAGE" value="WIP : Signing v2 for Query protocol on SimpleDB service" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/resources/aws-sdk-core/apis/ecs/2014-11-13/api-2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7545">
+          <caret line="503" column="5" lean-forward="false" selection-start-line="503" selection-start-column="5" selection-end-line="503" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/aws-sdk-core/apis/elasticbeanstalk/2010-12-01/api-2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11385">
+          <caret line="759" column="5" lean-forward="false" selection-start-line="759" selection-start-column="5" selection-end-line="759" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/resourcegroupstaggingapi.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/monitoring.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/logs.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/route53domains.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/s3.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/shield.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/servicecatalog.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/awsgen.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="67" lean-forward="false" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/apigateway/_2015-07-09.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5610">
+          <caret line="374" column="100" lean-forward="false" selection-start-line="374" selection-start-column="100" selection-end-line="374" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3735">
+          <caret line="249" column="10" lean-forward="false" selection-start-line="249" selection-start-column="10" selection-end-line="249" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/resourcegroupstaggingapi.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/monitoring.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/logs.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/route53domains.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/s3.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/shield.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/servicecatalog.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore" />
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/apigateway/_2015-07-09.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5610">
+          <caret line="374" column="100" lean-forward="false" selection-start-line="374" selection-start-column="100" selection-end-line="374" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/resourcegroupstaggingapi.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/monitoring.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/logs.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/route53domains.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/s3.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/shield.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/servicecatalog.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/aws-sdk-core/apis/ecs/2014-11-13/api-2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7545">
+          <caret line="503" column="5" lean-forward="false" selection-start-line="503" selection-start-column="5" selection-end-line="503" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/aws-sdk-core/apis/elasticbeanstalk/2010-12-01/api-2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11385">
+          <caret line="759" column="5" lean-forward="false" selection-start-line="759" selection-start-column="5" selection-end-line="759" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/aws-sdk-core/apis/lambda/2015-03-31/api-2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/cgrand/xforms/0.7.2/xforms-0.7.2.jar!/net/cgrand/xforms/rfs.cljc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/rds.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/sdb.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/jdk/Contents/Home/jre/lib/rt.jar!/java/time/ZoneId.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="50" column="25" lean-forward="false" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/jdk/Contents/Home/jre/lib/rt.jar!/java/time/format/DateTimeFormatter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="53" column="42" lean-forward="false" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/jdk/Contents/Home/jre/lib/rt.jar!/java/time/LocalDateTime.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="40" column="32" lean-forward="false" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/clj-http/clj-http/3.7.0/clj-http-3.7.0.jar!/clj_http/client.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2445">
+          <caret line="163" column="6" lean-forward="false" selection-start-line="163" selection-start-column="6" selection-end-line="163" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/clojure/clojure/1.9.0-alpha19/clojure-1.9.0-alpha19.jar!/clojure/walk.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="92" column="6" lean-forward="false" selection-start-line="92" selection-start-column="6" selection-end-line="92" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/clj-http/clj-http/3.7.0/clj-http-3.7.0.jar!/clj_http/util.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/aws-sdk-core/apis/sdb/2009-04-15/paginators-1.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/aws-partitions/partitions.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/lambda/_2015-03-31.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aws-clj-sdk.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/aws-sdk-core/apis/sdb/2009-04-15/api-2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/aws-sdk-core/apis/sdb/2009-04-15/docs-2.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws/sdb/_2009-04-15.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="51" lean-forward="true" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/awsgen.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4057">
+          <caret line="393" column="78" lean-forward="false" selection-start-line="393" selection-start-column="74" selection-end-line="393" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/awssig.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="194" column="58" lean-forward="false" selection-start-line="194" selection-start-column="58" selection-end-line="194" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/portkey/aws.clj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1781">
+          <caret line="92" column="28" lean-forward="false" selection-start-line="92" selection-start-column="28" selection-end-line="92" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>IDE SDK</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

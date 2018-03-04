@@ -89,6 +89,9 @@
 (defn region []
   (or *region* (guess-region!)))
 
+(defn- sign-v2 [req credential-scope]
+  (sig/sigv2 req (into (credentials) credential-scope)))
+
 (defn- sign-v4 [req credential-scope]
   (sig/sigv4 req (into (credentials) credential-scope)))
 
@@ -96,7 +99,8 @@
   (fn [{:as req :keys [::credential-scope ::signature-version]} & args]
     (let [req (dissoc req ::credential-scope ::signature-version)
           req (case signature-version
-                (:v4 :s3v4) (sign-v4 req credential-scope))]
+                (:v4 :s3v4) (sign-v4 req credential-scope)
+                (:v2) (sign-v2 req credential-scope))]
       (apply client req args))))
 
 (defn sync-http-client [req coerce-resp]
@@ -231,6 +235,33 @@
                 404 [:result nil]
                 [:exception (ex-info "Unexpected response" {:response response})]))))))))
 
+(defn -query-call
+  "WIP : Not usable yet"
+  [endpoints method uri input input-spec
+                       {headers-params :headers uri-params :uri querystring-params :querystring payload :payload move :move}
+                       ok-code output-spec error-specs]
+  (let [{:keys [endpoint credential-scope signature-version]} (endpoints (region))]
+    (->
+      {:method method
+       ::credential-scope credential-scope
+       ::signature-version signature-version
+       :url (str endpoint uri)
+       :headers {"content-type" "application/x-www-form-urlencoded"}
+       :as :json-string-keys
+       :body (some-> input-spec (conform-or-throw input))}
+      (*http-client*
+        (fn [{:as response {content-type "Content-Type"} :headers}]
+          (if (if ok-code (= ok-code (:status response)) (<= 200 (:status response) 299))
+            [:result (if output-spec
+                       (spec/unform output-spec (coerce-body content-type (:body response)))
+                       true)]
+            (if-some [[type spec] (find error-specs (get-in response [:headers "x-amzn-ErrorType"]))]
+              [:exception (let [m (spec/unform spec (json/parse-string (coerce-body content-type (:body response))))]
+                            (ex-info (str type ": " (:message m)) m))]
+              (case (:status response)
+                404 [:result nil]
+                [:exception (ex-info "Unexpected response" {:response response})]))))))))
+
 ;; spec utils
 (defn keep-keys [f]
   #(into {} (keep (fn [[k v]] (when-some [k (f k)] [k v]))) %))
@@ -277,461 +308,7 @@
 ;; 4) Generalize to all query protocol
 
 
-;; SimpleDB operations
-(def sdb-operations
-  {"ListDomains"           {"name"   "ListDomains",
-                            "http"   {"method" "POST", "requestUri" "/"},
-                            "input"  {"shape" "ListDomainsRequest"},
-                            "output" {"shape" "ListDomainsResult", "resultWrapper" "ListDomainsResult"},
-                            "errors" [{"shape"     "InvalidParameterValue",
-                                       "error"     {"code" "InvalidParameterValue", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "InvalidNextToken",
-                                       "error"     {"code" "InvalidNextToken", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}]},
-   "GetAttributes"         {"name"   "GetAttributes",
-                            "http"   {"method" "POST", "requestUri" "/"},
-                            "input"  {"shape" "GetAttributesRequest"},
-                            "output" {"shape" "GetAttributesResult", "resultWrapper" "GetAttributesResult"},
-                            "errors" [{"shape"     "InvalidParameterValue",
-                                       "error"     {"code" "InvalidParameterValue", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "MissingParameter",
-                                       "error"     {"code" "MissingParameter", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "NoSuchDomain",
-                                       "error"     {"code" "NoSuchDomain", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}]},
-   "BatchDeleteAttributes" {"name"  "BatchDeleteAttributes",
-                            "http"  {"method" "POST", "requestUri" "/"},
-                            "input" {"shape" "BatchDeleteAttributesRequest"}},
-   "DomainMetadata"        {"name"   "DomainMetadata",
-                            "http"   {"method" "POST", "requestUri" "/"},
-                            "input"  {"shape" "DomainMetadataRequest"},
-                            "output" {"shape" "DomainMetadataResult", "resultWrapper" "DomainMetadataResult"},
-                            "errors" [{"shape"     "MissingParameter",
-                                       "error"     {"code" "MissingParameter", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "NoSuchDomain",
-                                       "error"     {"code" "NoSuchDomain", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}]},
-   "DeleteAttributes"      {"name"   "DeleteAttributes",
-                            "http"   {"method" "POST", "requestUri" "/"},
-                            "input"  {"shape" "DeleteAttributesRequest"},
-                            "errors" [{"shape"     "InvalidParameterValue",
-                                       "error"     {"code" "InvalidParameterValue", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "MissingParameter",
-                                       "error"     {"code" "MissingParameter", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "NoSuchDomain",
-                                       "error"     {"code" "NoSuchDomain", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "AttributeDoesNotExist",
-                                       "error"     {"code" "AttributeDoesNotExist", "httpStatusCode" 404, "senderFault" true},
-                                       "exception" true}]},
-   "PutAttributes"         {"name"   "PutAttributes",
-                            "http"   {"method" "POST", "requestUri" "/"},
-                            "input"  {"shape" "PutAttributesRequest"},
-                            "errors" [{"shape"     "InvalidParameterValue",
-                                       "error"     {"code" "InvalidParameterValue", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "MissingParameter",
-                                       "error"     {"code" "MissingParameter", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "NoSuchDomain",
-                                       "error"     {"code" "NoSuchDomain", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "NumberDomainAttributesExceeded",
-                                       "error"     {"code" "NumberDomainAttributesExceeded", "httpStatusCode" 409, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "NumberDomainBytesExceeded",
-                                       "error"     {"code" "NumberDomainBytesExceeded", "httpStatusCode" 409, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "NumberItemAttributesExceeded",
-                                       "error"     {"code" "NumberItemAttributesExceeded", "httpStatusCode" 409, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "AttributeDoesNotExist",
-                                       "error"     {"code" "AttributeDoesNotExist", "httpStatusCode" 404, "senderFault" true},
-                                       "exception" true}]},
-   "CreateDomain"          {"name"   "CreateDomain",
-                            "http"   {"method" "POST", "requestUri" "/"},
-                            "input"  {"shape" "CreateDomainRequest"},
-                            "errors" [{"shape"     "InvalidParameterValue",
-                                       "error"     {"code" "InvalidParameterValue", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "MissingParameter",
-                                       "error"     {"code" "MissingParameter", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "NumberDomainsExceeded",
-                                       "error"     {"code" "NumberDomainsExceeded", "httpStatusCode" 409, "senderFault" true},
-                                       "exception" true}]},
-   "BatchPutAttributes"    {"name"   "BatchPutAttributes",
-                            "http"   {"method" "POST", "requestUri" "/"},
-                            "input"  {"shape" "BatchPutAttributesRequest"},
-                            "errors" [{"shape"     "DuplicateItemName",
-                                       "error"     {"code" "DuplicateItemName", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "InvalidParameterValue",
-                                       "error"     {"code" "InvalidParameterValue", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "MissingParameter",
-                                       "error"     {"code" "MissingParameter", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "NoSuchDomain",
-                                       "error"     {"code" "NoSuchDomain", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "NumberItemAttributesExceeded",
-                                       "error"     {"code"           "NumberItemAttributesExceeded",
-                                                    "httpStatusCode" 409,
-                                                    "senderFault"    true},
-                                       "exception" true}
-                                      {"shape"     "NumberDomainAttributesExceeded",
-                                       "error"     {"code"           "NumberDomainAttributesExceeded",
-                                                    "httpStatusCode" 409,
-                                                    "senderFault"    true},
-                                       "exception" true}
-                                      {"shape"     "NumberDomainBytesExceeded",
-                                       "error"     {"code" "NumberDomainBytesExceeded", "httpStatusCode" 409, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "NumberSubmittedItemsExceeded",
-                                       "error"     {"code"           "NumberSubmittedItemsExceeded",
-                                                    "httpStatusCode" 409,
-                                                    "senderFault"    true},
-                                       "exception" true}
-                                      {"shape"     "NumberSubmittedAttributesExceeded",
-                                       "error"     {"code"           "NumberSubmittedAttributesExceeded",
-                                                    "httpStatusCode" 409,
-                                                    "senderFault"    true},
-                                       "exception" true}]},
-   "DeleteDomain"          {"name"   "DeleteDomain",
-                            "http"   {"method" "POST", "requestUri" "/"},
-                            "input"  {"shape" "DeleteDomainRequest"},
-                            "errors" [{"shape"     "MissingParameter",
-                                       "error"     {"code" "MissingParameter", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}]},
-   "Select"                {"name"   "Select",
-                            "http"   {"method" "POST", "requestUri" "/"},
-                            "input"  {"shape" "SelectRequest"},
-                            "output" {"shape" "SelectResult", "resultWrapper" "SelectResult"},
-                            "errors" [{"shape"     "InvalidParameterValue",
-                                       "error"     {"code" "InvalidParameterValue", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "InvalidNextToken",
-                                       "error"     {"code" "InvalidNextToken", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "InvalidNumberPredicates",
-                                       "error"     {"code" "InvalidNumberPredicates", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "InvalidNumberValueTests",
-                                       "error"     {"code" "InvalidNumberValueTests", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "InvalidQueryExpression",
-                                       "error"     {"code" "InvalidQueryExpression", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "MissingParameter",
-                                       "error"     {"code" "MissingParameter", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "NoSuchDomain",
-                                       "error"     {"code" "NoSuchDomain", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "RequestTimeout",
-                                       "error"     {"code" "RequestTimeout", "httpStatusCode" 408, "senderFault" true},
-                                       "exception" true}
-                                      {"shape"     "TooManyRequestedAttributes",
-                                       "error"     {"code" "TooManyRequestedAttributes", "httpStatusCode" 400, "senderFault" true},
-                                       "exception" true}]}})
 
-;; SimpleDB Shapes
-(def sdb-shapes
-  {"InvalidQueryExpression"
-             {"type"      "structure",
-              "members"   {"BoxUsage" {"shape" "Float"}},
-              "error"
-                          {"code"           "InvalidQueryExpression",
-                           "httpStatusCode" 400,
-                           "senderFault"    true},
-              "exception" true},
-   "DeleteAttributesRequest"
-             {"type"     "structure",
-              "required" ["DomainName" "ItemName"],
-              "members"
-                         {"DomainName" {"shape" "String"},
-                          "ItemName"   {"shape" "String"},
-                          "Attributes" {"shape" "AttributeList"},
-                          "Expected"   {"shape" "UpdateCondition"}}},
-   "AttributeList"
-             {"type"      "list",
-              "member"    {"shape" "Attribute", "locationName" "Attribute"},
-              "flattened" true},
-   "DuplicateItemName"
-             {"type"      "structure",
-              "members"   {"BoxUsage" {"shape" "Float"}},
-              "error"
-                          {"code"           "DuplicateItemName",
-                           "httpStatusCode" 400,
-                           "senderFault"    true},
-              "exception" true},
-   "InvalidNumberPredicates"
-             {"type"      "structure",
-              "members"   {"BoxUsage" {"shape" "Float"}},
-              "error"
-                          {"code"           "InvalidNumberPredicates",
-                           "httpStatusCode" 400,
-                           "senderFault"    true},
-              "exception" true},
-   "DeletableItemList"
-             {"type"      "list",
-              "member"    {"shape" "DeletableItem", "locationName" "Item"},
-              "flattened" true},
-   "DeletableItem"
-             {"type"     "structure",
-              "required" ["Name"],
-              "members"
-                         {"Name"       {"shape" "String", "locationName" "ItemName"},
-                          "Attributes" {"shape" "AttributeList"}}},
-   "NumberSubmittedAttributesExceeded"
-             {"type"      "structure",
-              "members"   {"BoxUsage" {"shape" "Float"}},
-              "error"
-                          {"code"           "NumberSubmittedAttributesExceeded",
-                           "httpStatusCode" 409,
-                           "senderFault"    true},
-              "exception" true},
-   "SelectResult"
-             {"type" "structure",
-              "members"
-                     {"Items" {"shape" "ItemList"}, "NextToken" {"shape" "String"}}},
-   "ReplaceableItem"
-             {"type"     "structure",
-              "required" ["Name" "Attributes"],
-              "members"
-                         {"Name"       {"shape" "String", "locationName" "ItemName"},
-                          "Attributes" {"shape" "ReplaceableAttributeList"}}},
-   "DomainMetadataRequest"
-             {"type"     "structure",
-              "required" ["DomainName"],
-              "members"  {"DomainName" {"shape" "String"}}},
-   "InvalidParameterValue"
-             {"type"      "structure",
-              "members"   {"BoxUsage" {"shape" "Float"}},
-              "error"
-                          {"code"           "InvalidParameterValue",
-                           "httpStatusCode" 400,
-                           "senderFault"    true},
-              "exception" true},
-   "BatchPutAttributesRequest"
-             {"type"     "structure",
-              "required" ["DomainName" "Items"],
-              "members"
-                         {"DomainName" {"shape" "String"},
-                          "Items"      {"shape" "ReplaceableItemList"}}},
-   "PutAttributesRequest"
-             {"type"     "structure",
-              "required" ["DomainName" "ItemName" "Attributes"],
-              "members"
-                         {"DomainName" {"shape" "String"},
-                          "ItemName"   {"shape" "String"},
-                          "Attributes" {"shape" "ReplaceableAttributeList"},
-                          "Expected"   {"shape" "UpdateCondition"}}},
-   "CreateDomainRequest"
-             {"type"     "structure",
-              "required" ["DomainName"],
-              "members"  {"DomainName" {"shape" "String"}}},
-   "NumberDomainBytesExceeded"
-             {"type"      "structure",
-              "members"   {"BoxUsage" {"shape" "Float"}},
-              "error"
-                          {"code"           "NumberDomainBytesExceeded",
-                           "httpStatusCode" 409,
-                           "senderFault"    true},
-              "exception" true},
-   "NumberDomainAttributesExceeded"
-             {"type"      "structure",
-              "members"   {"BoxUsage" {"shape" "Float"}},
-              "error"
-                          {"code"           "NumberDomainAttributesExceeded",
-                           "httpStatusCode" 409,
-                           "senderFault"    true},
-              "exception" true},
-   "ItemList"
-             {"type"      "list",
-              "member"    {"shape" "Item", "locationName" "Item"},
-              "flattened" true},
-   "BatchDeleteAttributesRequest"
-             {"type"     "structure",
-              "required" ["DomainName" "Items"],
-              "members"
-                         {"DomainName" {"shape" "String"},
-                          "Items"      {"shape" "DeletableItemList"}}},
-   "Attribute"
-             {"type"     "structure",
-              "required" ["Name" "Value"],
-              "members"
-                         {"Name"                   {"shape" "String"},
-                          "AlternateNameEncoding"  {"shape" "String"},
-                          "Value"                  {"shape" "String"},
-                          "AlternateValueEncoding" {"shape" "String"}}},
-   "ReplaceableAttributeList"
-             {"type"      "list",
-              "member"
-                          {"shape" "ReplaceableAttribute", "locationName" "Attribute"},
-              "flattened" true},
-   "DomainNameList"
-             {"type"      "list",
-              "member"    {"shape" "String", "locationName" "DomainName"},
-              "flattened" true},
-   "UpdateCondition"
-             {"type" "structure",
-              "members"
-                     {"Name"   {"shape" "String"},
-                      "Value"  {"shape" "String"},
-                      "Exists" {"shape" "Boolean"}}},
-   "DeleteDomainRequest"
-             {"type"     "structure",
-              "required" ["DomainName"],
-              "members"  {"DomainName" {"shape" "String"}}},
-   "NoSuchDomain"
-             {"type"      "structure",
-              "members"   {"BoxUsage" {"shape" "Float"}},
-              "error"
-                          {"code" "NoSuchDomain", "httpStatusCode" 400, "senderFault" true},
-              "exception" true},
-   "ListDomainsRequest"
-             {"type" "structure",
-              "members"
-                     {"MaxNumberOfDomains" {"shape" "Integer"},
-                      "NextToken"          {"shape" "String"}}},
-   "NumberDomainsExceeded"
-             {"type"      "structure",
-              "members"   {"BoxUsage" {"shape" "Float"}},
-              "error"
-                          {"code"           "NumberDomainsExceeded",
-                           "httpStatusCode" 409,
-                           "senderFault"    true},
-              "exception" true},
-   "ListDomainsResult"
-             {"type" "structure",
-              "members"
-                     {"DomainNames" {"shape" "DomainNameList"},
-                      "NextToken"   {"shape" "String"}}},
-   "AttributeNameList"
-             {"type"      "list",
-              "member"    {"shape" "String", "locationName" "AttributeName"},
-              "flattened" true},
-   "Integer" {"type" "integer"},
-   "String"  {"type" "string"},
-   "ReplaceableAttribute"
-             {"type"     "structure",
-              "required" ["Name" "Value"],
-              "members"
-                         {"Name"    {"shape" "String"},
-                          "Value"   {"shape" "String"},
-                          "Replace" {"shape" "Boolean"}}},
-   "GetAttributesRequest"
-             {"type"     "structure",
-              "required" ["DomainName" "ItemName"],
-              "members"
-                         {"DomainName"     {"shape" "String"},
-                          "ItemName"       {"shape" "String"},
-                          "AttributeNames" {"shape" "AttributeNameList"},
-                          "ConsistentRead" {"shape" "Boolean"}}},
-   "Long"    {"type" "long"},
-   "ReplaceableItemList"
-             {"type"      "list",
-              "member"    {"shape" "ReplaceableItem", "locationName" "Item"},
-              "flattened" true},
-   "SelectRequest"
-             {"type"     "structure",
-              "required" ["SelectExpression"],
-              "members"
-                         {"SelectExpression" {"shape" "String"},
-                          "NextToken"        {"shape" "String"},
-                          "ConsistentRead"   {"shape" "Boolean"}}},
-   "AttributeDoesNotExist"
-             {"type"      "structure",
-              "members"   {"BoxUsage" {"shape" "Float"}},
-              "error"
-                          {"code"           "AttributeDoesNotExist",
-                           "httpStatusCode" 404,
-                           "senderFault"    true},
-              "exception" true},
-   "NumberSubmittedItemsExceeded"
-             {"type"      "structure",
-              "members"   {"BoxUsage" {"shape" "Float"}},
-              "error"
-                          {"code"           "NumberSubmittedItemsExceeded",
-                           "httpStatusCode" 409,
-                           "senderFault"    true},
-              "exception" true},
-   "InvalidNumberValueTests"
-             {"type"      "structure",
-              "members"   {"BoxUsage" {"shape" "Float"}},
-              "error"
-                          {"code"           "InvalidNumberValueTests",
-                           "httpStatusCode" 400,
-                           "senderFault"    true},
-              "exception" true},
-   "NumberItemAttributesExceeded"
-             {"type"      "structure",
-              "members"   {"BoxUsage" {"shape" "Float"}},
-              "error"
-                          {"code"           "NumberItemAttributesExceeded",
-                           "httpStatusCode" 409,
-                           "senderFault"    true},
-              "exception" true},
-   "DomainMetadataResult"
-             {"type" "structure",
-              "members"
-                     {"ItemCount"                {"shape" "Integer"},
-                      "ItemNamesSizeBytes"       {"shape" "Long"},
-                      "AttributeNameCount"       {"shape" "Integer"},
-                      "AttributeNamesSizeBytes"  {"shape" "Long"},
-                      "AttributeValueCount"      {"shape" "Integer"},
-                      "AttributeValuesSizeBytes" {"shape" "Long"},
-                      "Timestamp"                {"shape" "Integer"}}},
-   "GetAttributesResult"
-             {"type"    "structure",
-              "members" {"Attributes" {"shape" "AttributeList"}}},
-   "TooManyRequestedAttributes"
-             {"type"      "structure",
-              "members"   {"BoxUsage" {"shape" "Float"}},
-              "error"
-                          {"code"           "TooManyRequestedAttributes",
-                           "httpStatusCode" 400,
-                           "senderFault"    true},
-              "exception" true},
-   "RequestTimeout"
-             {"type"      "structure",
-              "members"   {"BoxUsage" {"shape" "Float"}},
-              "error"
-                          {"code" "RequestTimeout", "httpStatusCode" 408, "senderFault" true},
-              "exception" true},
-   "Item"
-             {"type"     "structure",
-              "required" ["Name" "Attributes"],
-              "members"
-                         {"Name"                  {"shape" "String"},
-                          "AlternateNameEncoding" {"shape" "String"},
-                          "Attributes"            {"shape" "AttributeList"}}},
-   "Float"   {"type" "float"},
-   "MissingParameter"
-             {"type"      "structure",
-              "members"   {"BoxUsage" {"shape" "Float"}},
-              "error"
-                          {"code"           "MissingParameter",
-                           "httpStatusCode" 400,
-                           "senderFault"    true},
-              "exception" true},
-   "InvalidNextToken"
-             {"type"      "structure",
-              "members"   {"BoxUsage" {"shape" "Float"}},
-              "error"
-                          {"code"           "InvalidNextToken",
-                           "httpStatusCode" 400,
-                           "senderFault"    true},
-              "exception" true},
-   "Boolean" {"type" "boolean"}})
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Query Protocol requirements
@@ -753,84 +330,9 @@
                                "ItemName"          "NOT DONE"
                                "SignatureMethod"   "NOT DONE"}}}
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Signing a request v2
-;; https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/HMACAuth.html#REST_RESTAuth
 
-;; utils
-(def x-amz-date-formatter
-  (java.time.format.DateTimeFormatter/ofPattern "yyyy-MM-dd'T'HH:mm:ss'Z'"))
 
-(defn hmac-sha-256
-  [^bytes secret ^String s]
-  (-> (javax.crypto.Mac/getInstance "HmacSHA256")
-      (doto (.init (javax.crypto.spec.SecretKeySpec. secret "HmacSHA256")))
-      (.doFinal (.getBytes s "UTF8"))))
 
-(defn- utf8-natural-byte-cmp [^String a ^String b]
-  ; > Sort the UTF-8 query string components by parameter name with natural byte ordering.
-  ; I wonder if it really matters for the input we deal with
-  (let [sa a sb b
-        a (.getBytes a "UTF8")
-        b (.getBytes b "UTF8")
-        n (min (alength a) (alength b))]
-    (loop [i 0]
-      (if (< i n)
-        (let [r (- (aget a i) (aget b i))]
-          (if (zero? r)
-            (recur (inc i))
-            r))
-        (- (alength a) (alength b))))))
-
-;; step 1
-(defn create-canonicalized-query-string-v2
-  "Create a canonicalized query-string for building the signature."
-  [& {:keys [query-params]}]
-  (x/str
-    (comp
-      (x/sort-by key utf8-natural-byte-cmp)
-      (x/for [[k v] %]
-             (str (codec/url-encode k) "=" (codec/url-encode v)))
-      (interpose "&"))
-    query-params))
-
-;; step 2
-(defn create-string-to-sign-v2 [verb host uri qs]
-  (->> [verb "\n" host "\n" uri "\n" qs]
-       (apply str)))
-
-;; step 3
-(defn create-base-64-hmac-signature [secret-key string-to-sign]
-  (-> secret-key
-      (.getBytes "UTF8")
-      (hmac-sha-256 string-to-sign)
-      base64-encode))
-
-(comment
-
-  ;; this is where I am testing my request
-  ;; And it' not WORKING !!!
-  (let [host "sdb.amazonaws.com"
-        access-key "YOUR-ACCESS-KEY"
-        secret-key "YOUR-SECRET-KEY"
-        domain-name "Name1"
-        qp {"Action"           "CreateDomain"
-            "AWSAccessKeyId"   access-key
-            "DomainName"       domain-name
-            "SignatureVersion" "2"
-            "SignatureMethod"  "HmacSHA256"
-            "Timestamp"        (.format (java.time.LocalDateTime/now (java.time.ZoneId/of "Z")) x-amz-date-formatter)
-            "Version"          "2009-04-15"}]
-    (->> qp
-         (create-canonicalized-query-string-v2 :query-params)
-         (create-string-to-sign-v2 "POST" host "/")
-         (create-base-64-hmac-signature secret-key)
-         codec/url-encode
-         (assoc qp "Signature")
-         (assoc {:debug true :debug-body true :content-type "application/x-www-form-urlencoded"} :form-params)
-         (http/post (str "https://" host))))
-
-  )
 
 
 
