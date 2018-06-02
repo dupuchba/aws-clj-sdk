@@ -1,20 +1,57 @@
 (ns portkey.awsgen
   (:require [clojure.spec.alpha :as spec]
-    [cheshire.core :as json]
-    [clojure.java.io :as io]
-    [net.cgrand.xforms :as x]
-    [clojure.string :as str]
-    [portkey.aws :as aws]
-    [clj-http.client :as http]
-    [clojure.string :as str]
-    [clojure.pprint]
-    [clojure.java.classpath :as cp]))
+            [cheshire.core :as json]
+            [clojure.java.io :as io]
+            [net.cgrand.xforms :as x]
+            [clojure.string :as str]
+            [portkey.aws :as aws]
+            [clj-http.client :as http]
+            [clojure.string :as str]
+            [clojure.pprint]
+            [clojure.java.classpath :as cp]
+            [clojure.string :as s]))
 
 #_ (def all-apis 
      (->> (java.io.File. "resources/aws-sdk-core/apis/")
        file-seq
        (filter #(= "api-2.json" (.getName ^java.io.File %)))
        (map #(with-open [i (io/reader %)] (json/parse-stream i)))))
+
+
+(defn- shapes-seq
+  "Takes a shape and returns a sequences of containing itself and all nested shapes (if any)."
+  [shape]
+  (tree-seq #(and (map? %) (#{"structure" "list" "map"} (% "type")))
+    #(case (% "type")
+       "structure" (vals (% "members"))
+       "list" [(% "member")]
+       "map" [(% "key") (% "value")]) shape))
+
+
+(defn- shapes-by-usage
+  "Takes an api description and returns a map categorigizing shapes on their usage.
+  This map has 4 keys: :inputs, :input-roots, :outputs and :output-roots, all mapping to collections
+  of shapes.
+  Root shapes are shapes that appear as top-level paylod (including errors).
+  A shape may appear in several categories."
+  [{:strs [shapes operations] :as api}]
+  (let [nested-shape-names (into #{} (comp (mapcat shapes-seq) (keep #(get % "shape")))
+                             (vals shapes))
+        input-roots (keep #(get-in % ["input" "shape"]) (vals operations))
+        output-roots (for [{:strs [errors output]} (vals operations)
+                           {:strs [shape]} (cons output errors)
+                           :when shape]
+                       shape)
+        inputs (into #{} (comp (map shapes) (mapcat shapes-seq) (keep #(get % "shape")))
+                 input-roots)
+        outputs (into #{} (comp (map shapes) (mapcat shapes-seq) (keep #(get % "shape")))
+                  output-roots)]
+    (when-some [culprit (first (filter #(or (get % "location") (get % "payload")) (mapcat (comp shapes-seq shapes) nested-shape-names)))]
+      (throw (ex-info "Attribute payload or location found on nested shape." {:culprit culprit :api api})))
+    {:inputs inputs
+     :input-roots input-roots
+     :outputs outputs
+     :output-roots output-roots}))
 
 (defmulti ^:private shape-to-spec (fn [ns [name {:strs [type]}]] type))
 
@@ -230,6 +267,97 @@
           "authtype" #{"none" "v4-unsigned-body"}
           "deprecated" boolean?}))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; BEGINNING OF PROOF OF CONCEPT FOR SPEC -> SER -> RESP ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+(defn shape-name->ser-name
+  "Given a shape name, transorm it to a ser-* name."
+  [shape-name]
+  (->> shape-name (str "ser-") portkey.aws/dashed symbol))
+
+  
+(defmulti gen-ser-input (fn [shape-name api _]
+                          [(get-in api ["metadata" "protocol"]) (get-in api ["shapes" shape-name "type"])]))
+
+
+(defmethod gen-ser-input :default [shape-name api _]
+  (let [mess [(get-in api ["metadata" "protocol"]) (get-in api ["shapes" shape-name "type"])]]
+    (throw
+     (ex-info (str "unsupported protocol/type for shape : " shape-name)
+              {:shape mess}))))
+
+
+(defmethod gen-ser-input ["rest-json" "integer"] [shape-name api input] input)
+  
+
+(defmethod gen-ser-input ["rest-json" "structure"] [shape-name api input]
+  (let [shape (get-in api ["shapes" shape-name])]
+    (into {}
+          (map (fn [[k# {:strs [shape]}]]
+                 [k# `(~(shape-name->ser-name k#) (~(-> k# aws/dashed keyword) ~input))]))
+          (shape "members"))))
+
+
+(defmethod gen-ser-input ["rest-json" "structure"] [shape-name api input]
+  (let [shape (get-in api ["shapes" shape-name])]
+    (into {}
+          (map (fn [[k# {:strs [shape]}]]
+                 [k# `(~(shape-name->ser-name k#) (~(-> k# aws/dashed keyword) ~input))]))
+          (shape "members"))))
+
+
+(defmethod gen-ser-input ["rest-json" "structure"] [shape-name api input]
+  (let [shape  (get-in api ["shapes" shape-name])
+        x# (into []
+                 (mapcat (fn [[k# {:strs [shape]}]]
+                           (let [test-form# `(~(-> k# aws/dashed keyword) ~input)]
+                             [test-form# `(assoc ~k# (~(shape-name->ser-name k#) ~test-form#))])))
+                 (shape "members"))]
+    `(cond-> {}
+       ~@x#)))
+
+    
+(defmethod gen-ser-input ["rest-json" "string"] [shape-name api input]
+  (let [{:strs [enum] :as shape} (get-in api ["shapes" shape-name])]
+    (if enum
+      (let [m (into {} (mapcat #(vector [% %] [(-> % aws/dashed keyword) %])) enum)]
+        (list m input))
+      input)))
+
+
+(defmethod gen-ser-input ["rest-json" "map"] [shape-name api input] input)
+  
+
+(defmethod gen-ser-input ["rest-json" "boolean"] [shape-name api input] input)
+  
+
+(defmethod gen-ser-input ["rest-json" "timestamp"] [shape-name api input] input)
+  
+
+(defmethod gen-ser-input ["rest-json" "list"] [shape-name api input] input)
+  
+
+(defmethod gen-ser-input ["rest-json" "blob"] [shape-name api input]
+  `(aws/base64-encode ~input))
+
+
+(defn gen-ser-fns [api shape-name]
+  (let [varname (shape-name->ser-name shape-name)
+        input# (symbol "shape-input")]
+    `(defn- ~varname
+       [~input#]
+       ~(gen-ser-input shape-name api input#))))
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; END OF PROOF OF CONCEPT WITH : SPEC -> SER -> RESP ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
 #_(str/replace uri #"\{(.*)}" (fn [[_ name]]))
 
 (defn split-line [n line]
@@ -346,21 +474,28 @@
                   `empty?)
          :ret ~(if output-spec `(spec/and ~output-spec) `true?)))))
 
+
+
 (defn gen-api [ns-sym api-resource docs-resource]
   (let [api (json/parse-stream (io/reader api-resource))
         docs (json/parse-stream (io/reader docs-resource))]
     (case (get-in api ["metadata" "protocol"])
-      "rest-json" (for [[k gen] {"shapes" (comp #(doto % eval) gen-shape-spec) ; eval to make specs available right away
-                                 "operations" (fn [ns [_ op]] (gen-operation ns op (api "shapes") docs))}
-                        desc (api k)]
-                    (gen (name ns-sym) desc))
-      (do
-        (binding [*out* *err*] (prn 'skipping ns-sym 'protocol (get-in api ["metadata" "protocol"])))
-        [(list 'comment 'TODO 'support (get-in api ["metadata" "protocol"]))])
-      #_"json"
-      #_"ec2"
-      #_"query"
-      #_"rest-xml")))
+       "rest-json" #_(for [[k gen] {"shapes" (comp #(doto % eval) gen-shape-spec) ; eval to make specs available right away
+                                  "operations" (fn [ns [_ op]] (gen-operation ns op (api "shapes") docs))}
+                         desc (api k)]
+                       (gen (name ns-sym) desc))
+       (let [{:keys [outputs output-roots inputs input-roots]} (shapes-by-usage api)
+             vars (map (comp symbol portkey.aws/dashed)
+                       (concat (map #(str "ser-" %) inputs) (map #(str "req<-" %) input-roots)
+                               (map #(str "deser-" %) outputs) (map #(str "resp->" %) output-roots)))]
+         (let []))
+       (do
+         (binding [*out* *err*] (prn 'skipping ns-sym 'protocol (get-in api ["metadata" "protocol"])))
+         [(list 'comment 'TODO 'support (get-in api ["metadata" "protocol"]))])
+       #_"json"
+       #_"ec2"
+       #_"query"
+       #_"rest-xml")))
 
 (defn parse-endpoints! [src]
   (let [endpoints (with-open [r (io/reader src)] (json/parse-stream r))]
@@ -403,6 +538,7 @@
                           :let [apifile (str/replace api #"[-.]" "_")
                                 apins (str/replace api #"[.]" "-")
                                 [latest f] (first (rseq versions))]
+                          :when (= apins "lambda")
                           [version api-json] (cons [nil f] versions)
                           :let [[file ns] (if version
                                             [(java.io.File. (str "src/portkey/aws/" apifile "/_" version ".clj"))
@@ -414,15 +550,16 @@
                         (with-open [w (io/writer (doto file (-> .getParentFile .mkdirs)))
                                     docs-json (-> api-json io/file .getParentFile (io/file "docs-2.json") java.io.FileInputStream.)
                                     api-json (java.io.FileInputStream. api-json)]
-                          (binding [*out* w]
-                            (prn (list 'ns ns '(:require [portkey.aws])))
-                            (newline)
-                            (clojure.pprint/pprint (list 'def 'endpoints (list 'quote (get endpoints apins))))
-                            (doseq [form (gen-api ns api-json docs-json)]
-                              (newline)
-                              (if (and (seq? form) (= 'do (first form)))
-                                (run! prn (next form))
-                                (prn form)))))
+                          (sc.api/spy
+                           (binding [*out* w]
+                             (prn (list 'ns ns '(:require [portkey.aws])))
+                             (newline)
+                             (clojure.pprint/pprint (list 'def 'endpoints (list 'quote (get endpoints apins))))
+                             (doseq [form (gen-api ns api-json docs-json)]
+                               (newline)
+                               (if (and (seq? form) (= 'do (first form)))
+                                 (run! prn (next form))
+                                 (prn form))))))
                         {:gen-status :ok}
                         (catch Throwable t
                           (println "Failed to generate" api)
@@ -438,3 +575,64 @@
         (doseq [failure gen-failures]
           (-> failure :file (.delete))))
       (println "Generation OK!"))))
+
+
+
+
+
+(comment
+
+  (use 'clojure.repl)
+
+  (def lambda-api-file "api-resources/aws-sdk-ruby/apis/lambda/2015-03-31/api-2.json")
+  (def lambda-doc-file "api-resources/aws-sdk-ruby/apis/lambda/2015-03-31/docs-2.json")
+  (def ns' (symbol "portkey.aws.lambda"))
+  (def api (json/parse-stream (io/reader lambda-api-file)))
+
+  (let [api (json/parse-stream (io/reader lambda-api-file))
+        docs (json/parse-stream (io/reader lambda-doc-file))
+        forms
+        (case (get-in api ["metadata" "protocol"])
+          "rest-json" (for [[k gen] {"shapes" (comp #(doto % eval) gen-shape-spec) ; eval to make specs available right away
+                                     "operations" (fn [ns [_ op]] (gen-operation ns op (api "shapes") docs))}
+                            desc (api k)]
+                        (gen (name ns') desc))
+
+          (do
+            (binding [*out* *err*] (prn 'skipping ns' 'protocol (get-in api ["metadata" "protocol"])))
+            [(list 'comment 'TODO 'support (get-in api ["metadata" "protocol"]))])
+          #_"json"
+          #_"ec2"
+          #_"query"
+          #_"rest-xml")])
+
+  
+
+  
+  
+
+  
+  
+  
+  (let [{:keys [inputs]} (shapes-by-usage api)
+        f (fn [shape-name api]
+            (let [varname (shape-name->ser-name shape-name)
+                  input# (symbol "shape-input")]
+              `(defn- ~varname
+                 [~input#]
+                 ~(gen-ser-input shape-name api input#))))]
+    (map (fn [in]
+           (f in api))
+         inputs))
+
+
+  (get-in api ["shapes" "CreateAliasRequest"])
+
+  
+
+
+  
+
+
+
+  )
